@@ -1,0 +1,1 @@
+individual file backup里那三个文件是直接从书中复制来的原版代码。对比page56-57project文件夹中整个project中的三个同名文件，只有getline.c的前面加了句“#include <stdio.h>”。这是因为这里用到了getchar()函数，所以stdio.h头文件必须被包含进来。——但是当这三个在同一个文件中时，就没必要再在getline子函数那里包含一次头文件了。

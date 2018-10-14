@@ -1,0 +1,8 @@
+exercise1-5 输出格式控制问题
+exercise1-6 EOF=ctrl+z等
+exercise1-7 EOF按%d的格式输出的话显示的是-1
+exercise1-8 无论何时都不能使用"int nSpace = nTab = nLine = 0;"
+exercise1-9 if else的一些细节
+exercise1-10 while ( (c = getchar()) != EOF ) 和 for循环中(c = getchar()) != EOF 出现的函数挂起的问题。
+exercise1-11 没必要写程序。【练习 1-11. 如果由你来测试这个单词计数程序，你打算怎么做？如果程序存在错误，哪些输入最可能测出它们呢？】
+exercise1-12 一个=号引发的惨案呀~

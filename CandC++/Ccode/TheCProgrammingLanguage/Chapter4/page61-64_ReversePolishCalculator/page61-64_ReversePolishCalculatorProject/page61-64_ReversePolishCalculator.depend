@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1446123020 source:e:\快盘\文献\variouscodes\candc++\ccode\thecprogramminglanguage\chapter4\page61-64_reversepolishcalculator\page61-64_reversepolishcalculatorproject\getch.c
+
+1446123233 source:e:\快盘\文献\variouscodes\candc++\ccode\thecprogramminglanguage\chapter4\page61-64_reversepolishcalculator\page61-64_reversepolishcalculatorproject\getop.c
+	<stdio.h>
+	<ctype.h>
+

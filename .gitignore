@@ -1,0 +1,11 @@
+
+# others
+
+# temporary files for IDE
+
+# temporary files on Windows
+
+*.o
+*.exe
+
+# temporary files on Linux
