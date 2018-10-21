@@ -3,6 +3,9 @@
 
 # temporary files for IDE
 
+.vscode/
+.idea/
+
 # temporary files on Windows
 
 *.o
