@@ -26,6 +26,10 @@ Output: 3
 Explanation: The answer is "wke", with the length of 3. 
 Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 """
+"""
+https://leetcode.com/submissions/detail/189752569/
+https://leetcode.com/submissions/detail/189753835/  # python3版本的AC链接，代码是一样的，就多了一句无关紧要的注释- -
+"""
 
 """
 algo1的思路总是超时，这次换一种思路：
