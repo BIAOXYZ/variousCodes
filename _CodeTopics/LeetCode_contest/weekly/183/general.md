@@ -8,3 +8,8 @@
 - 5379. 石子游戏 III https://leetcode-cn.com/contest/weekly-contest-183/problems/stone-game-iii/
 
 # 笔记
+
+## (2) 
+
+>> MLGB，第二题第一种方法转成整数去做超时我就不说啥了，第二种就是字符串凭啥超时，而且一个用例都没过？我本地全踏马运行的好好的！
+
