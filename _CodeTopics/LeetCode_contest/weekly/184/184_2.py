@@ -38,3 +38,11 @@ class Solution(object):
             p = formListFromPosition(p,position)
         return res
         
+"""
+53 / 53 个通过测试用例
+状态：通过
+执行用时：188 ms
+内存消耗：12.9 MB
+
+# 那啥，开头的Class Node定义实际上后来就没用上，可以无视。
+"""
