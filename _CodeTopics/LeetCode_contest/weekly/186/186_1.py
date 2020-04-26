@@ -25,3 +25,8 @@ class Solution(object):
                 maxpoint = currpoint
         return maxpoint
     
+"""
+103 / 103 个通过测试用例
+执行用时：320 ms
+内存消耗：12.7 MB
+"""
