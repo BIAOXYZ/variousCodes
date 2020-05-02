@@ -64,7 +64,7 @@ print a
 999
 ```
 
->> 求小数的时候就更复杂了。预期的主要分支是这个`small2 = small.replace(replacestr,'0')`。
+>> 求小数的时候就更复杂了。预期的主要分支是这个`small2 = small.replace(replacestr,'0')`。但是如果没有引入replacefirst这个flag，那么对于输入555，直接就变成000了，肯定不对。同时对于某些会使replacestr为空字符的输入（比如10000），也得有`if replacestr == ''`这个分支来处理。
 ```py
 if replacestr == '':
     replacestr = small[0]
