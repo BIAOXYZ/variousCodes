@@ -9,3 +9,38 @@
 
 # 笔记
 
+## (2)
+
+第二题写的还是挺丑陋的，但是也是因为各种破情况比较多。
+- 首次是注释掉的很长的那部分，最早的时候是想提高时间复杂度，一边遍历一边替换，但是因为python的字符串是immutable的原因，比较麻烦，遂作罢。
+- 然后大的思路很清晰：首先遍历找到需要被替换的数字，然后用str的replace方法直接替换，但是边缘情况比较多（并且叠加python的语言特性），导致看起来会有些费解。
+
+```py
+if replacestr == '':
+    big2 = big
+else:
+    big2 = big.replace(replacestr,'9')
+```
+>> 预期的主要分支是这个`big2 = big.replace(replacestr,'9')`。但是前面加那个if分支是因为，假如输入是9，replacestr就是空字符，我们试试看`把空字符换成'9'`会是啥情况：
+```py
+num = 9
+strform = str(num)
+a = strform.replace('','9')
+print strform
+print a
+--------------------------------------------------
+9
+999
+```
+
+```
+if replacestr == '':
+    replacestr = small[0]
+    small2 = small.replace(replacestr,'1')
+else:
+    if replacefirst == False:
+        small2 = small.replace(replacestr,'0')
+    else:
+        small2 = small.replace(replacestr,'1')
+```
+>> 求小数的时候就更复杂了。预期的主要分支是这个`small2 = small.replace(replacestr,'0')`。
