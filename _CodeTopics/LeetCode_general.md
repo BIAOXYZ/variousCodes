@@ -11,7 +11,11 @@
 
 # [LeetCode探索] (https://leetcode-cn.com/explore/)
 
-初级算法 https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/
+## 初级算法 https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/
+
+|数组||
+|:--|--|
+| 删除排序数组中的重复项 【`LC26`】 | 买卖股票的最佳时机 II |
 
 中级算法 https://leetcode-cn.com/explore/interview/card/top-interview-questions-medium/
 
