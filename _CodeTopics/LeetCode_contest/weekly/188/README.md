@@ -8,3 +8,16 @@
 - 5407. 切披萨的方案数 https://leetcode-cn.com/contest/weekly-contest-188/problems/number-of-ways-of-cutting-a-pizza/
 
 # 笔记
+
+## (2)
+
+python的按位亦或运算符是`^`
+> Python 运算符 https://www.runoob.com/python/python-operators.html
+```py
+a = 60            # 60 = 0011 1100 
+b = 13            # 13 = 0000 1101
+c = a ^ b;        # 49 = 0011 0001
+print "c 的值为：", c
+--------------------------------------------------
+c 的值为： 49
+```
