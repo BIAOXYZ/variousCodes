@@ -73,6 +73,8 @@ length的公约数不为1就得分小组处理。
 """
 
 """
+# https://leetcode-cn.com/submissions/detail/73121986/
+
 34 / 35 个通过测试用例
 状态：超出时间限制
 最后执行的输入：
