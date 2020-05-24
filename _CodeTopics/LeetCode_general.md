@@ -15,10 +15,14 @@
 
 |数组||
 |:--|--|
-| 删除排序数组中的重复项 【`LC26`】 | 买卖股票的最佳时机 II 【`LC122`】 |
-| 旋转数组 ||
+| 删除排序数组中的重复项 【`LC26`】<br>【**特点**：in place删除；倒置for循环】 | 买卖股票的最佳时机 II 【`LC122`】 |
+| 旋转数组 【`LC189`】<br>【**特点**：in place；空间复杂度O(1)；结果导致只有一种算法不会TLE】 ||
 
-中级算法 https://leetcode-cn.com/explore/interview/card/top-interview-questions-medium/
+## 中级算法 https://leetcode-cn.com/explore/interview/card/top-interview-questions-medium/
+
+|数组和字符串||
+|:--|--|
+| 三数之和 | 矩阵置零 |
 
 高级算法 https://leetcode-cn.com/explore/interview/card/top-interview-questions-hard/
 
