@@ -17,7 +17,7 @@
 |:--|--|
 | 删除排序数组中的重复项 【`LC26`】<br>【**特点**：in place删除；倒置for循环】 | 买卖股票的最佳时机 II 【`LC122`】 |
 | 旋转数组 【`LC189`】<br>【**特点**：in place；空间复杂度O(1)；结果导致只有一种算法不会TLE】 | 存在重复元素 【`LC217`】 |
-| 只出现一次的数字 ||
+| 只出现一次的数字 【`LC136`】<br>【**特点**：线性复杂度（遍历输入数组然后形成一个map就行，和`LC217`类似）；是否能不使用额外空间（利用异或运算的性质）】 | 两个数组的交集 II |
 
 ## 中级算法 https://leetcode-cn.com/explore/interview/card/top-interview-questions-medium/
 
