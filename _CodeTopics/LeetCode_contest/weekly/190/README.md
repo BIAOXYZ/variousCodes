@@ -12,11 +12,25 @@
 ## (1)
 
 第一题把整个输入字符串sentence按空格分隔成一个一个单词，其实可以直接用python字符串的split方法，但是觉得自己写比较好。
-```
+- Python split()方法 https://www.runoob.com/python/att-string-split.html
+```py
+str1 = "i love eating burger"
+print str1.split()
+print str1
+str2 = str1.split()
+print str2
 
+txt = "Google#Runoob#Taobao#Facebook"
+x = txt.split("#", 1)
+print x
+--------------------------------------------------
+['i', 'love', 'eating', 'burger']
+i love eating burger
+['i', 'love', 'eating', 'burger']
+['Google', 'Runoob#Taobao#Facebook']
 ```
 
 ## (2)
 
-- 第二题先用最基本的办法，输入字符串s的下标从0开始（对应的当前单词为`s[0:k]`），到最后一个**可能的起始下标**length-k（对应的当前单词为`s[length-k:length-1]`），每次都考察当前k长字串里元音字符的个数并和maxVowel比较。这个方法不好的地方就是每次小循环也要处理k次是不是元音字符的比较，结果超时了。。。
-- 后来改成了`190_2_algo2.py`里的算法，先把第一个k长子串的currVowel和整个的maxVowel都求出来，然后对于s里的每个新字符，只是比较首尾字符是不是元音字符的情况。
+- 第二题先用最基本的办法：输入字符串s的下标从0开始（对应的当前单词为`s[0:k]`），到最后一个**可能的起始下标**length-k（对应的当前单词为`s[length-k:length]`），每次都考察当前k长字串里元音字符的个数并和maxVowel比较。这个方法不好的地方就是每次小循环也要处理k次是不是元音字符的比较，结果超时了。。。
+- 后来改成了`190_2_algo2.py`里的算法：先把第一个k长子串的currVowel和当前的maxVowel都求出来，然后对于s里的每个新的k长子串（这个子串其实就是上一个子串去掉下标最小的字符，然后加上一个下标更大的新字符形成的），只是比较首尾字符是不是元音字符的情况。
