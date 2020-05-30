@@ -8,3 +8,16 @@
 - 5411. 摘樱桃 II https://leetcode-cn.com/contest/biweekly-contest-27/problems/cherry-pickup-ii/
 
 # 笔记
+
+## (2)
+
+```py
+s = '101'
+print int(s)
+print int(s,2)
+print int(s,16)
+--------------------------------------------------
+101
+5
+257
+```
