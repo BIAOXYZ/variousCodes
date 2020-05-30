@@ -9,6 +9,34 @@
 
 # 笔记
 
+## (1)
+
+本来并不想用排序，后来想想排序还是快。所以先用了python列表的sort方法。注意，这个是直接把列表内容就改了，不是申请一个副本再排序。
+- Python List sort()方法 https://www.runoob.com/python/att-list-sort.html
+```py
+aList = [123, 'Google', 'Runoob', 'Taobao', 'Facebook'];
+aList.sort();
+print "List : ", aList
+--------------------------------------------------
+List :  [123, 'Facebook', 'Google', 'Runoob', 'Taobao']
+```
+
+第二种方法里用到了cmp函数，这个比较两个字典的时候返回的不是bool类型，而是0，1，-1。所以最后要再判断下。
+- Python 字典(Dictionary) cmp()方法 https://www.runoob.com/python/att-dictionary-cmp.html
+```py
+dict1 = {'Name': 'Zara', 'Age': 7};
+dict2 = {'Name': 'Mahnaz', 'Age': 27};
+dict3 = {'Name': 'Abid', 'Age': 27};
+dict4 = {'Name': 'Zara', 'Age': 7};
+print "Return Value : %d" %  cmp (dict1, dict2)
+print "Return Value : %d" %  cmp (dict2, dict3)
+print "Return Value : %d" %  cmp (dict1, dict4)
+--------------------------------------------------
+Return Value : -1
+Return Value : 1
+Return Value : 0
+```
+
 ## (2)
 
 ```py
