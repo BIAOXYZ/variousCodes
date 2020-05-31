@@ -8,3 +8,22 @@
 - 5427. 两个盒子中颜色不同的球数量相同的概率 https://leetcode-cn.com/contest/weekly-contest-191/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/
 
 # 笔记
+
+## (1)
+
+`max()`函数参数为某个列表；list的`.index()`方法；list的`.pop()`方法。
+```py
+l=[1,2,3,4,5]
+maxnum = max(l)
+print maxnum
+ind = l.index(maxnum)
+print ind
+l.pop(ind)
+print l
+--------------------------------------------------
+5
+4
+[1, 2, 3, 4]
+```
+
+## (2)
