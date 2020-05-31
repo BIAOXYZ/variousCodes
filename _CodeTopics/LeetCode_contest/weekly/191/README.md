@@ -39,3 +39,18 @@ print num2
 2
 2
 ```
+
+## (3)
+
+语法：字典的`.values()`方法遍历字典的key对应的键值；小函数getKey根据字典的键值返回对应的key；第一个TLE的程序用到了递归，其实写的还是凑合的，但是python在效率方面无人权；后面的algo2和algo3其实算法大方向是类似的，但是也是超时，没办法。
+```py
+# https://stackoverflow.com/questions/8214932/how-to-check-if-a-value-exists-in-a-dictionary-python
+
+>>> d = {'1': 'one', '3': 'three', '2': 'two', '5': 'five', '4': 'four'}
+>>> 'one' in d.values()
+True
+```
+```py
+def getKey(dic, val):
+    return [k for k, v in dic.items() if v == val]
+```
