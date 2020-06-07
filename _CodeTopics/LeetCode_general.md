@@ -91,3 +91,7 @@
 字符串 https://leetcode-cn.com/tag/string/
 
 图 https://leetcode-cn.com/tag/graph/
+
+广度优先搜索 https://leetcode-cn.com/tag/breadth-first-search/
+
+深度优先搜索 https://leetcode-cn.com/tag/depth-first-search/
