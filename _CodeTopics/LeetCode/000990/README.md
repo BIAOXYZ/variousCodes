@@ -16,4 +16,5 @@ djs changed in 2 is:  {u'a': u'a', u'!a': u'a', u'!c': u'a', u'!b': u'a', u'c': 
 # 2.
 
 - `000990_algo2.py`里`union`函数else分支那里比较大小后再决定谁当father其实也可以省略，不影响。但是某些更复杂的场景可以提高效率。
-- [官方答案](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/solution/deng-shi-fang-cheng-de-ke-man-zu-xing-by-leetcode-/)里是直接在Solution类下定义了一个`class UnionFind:`，这样每次find和union的时候就不用多一个参数了（因为`self.parent`直接可以用）。我感觉应该是我写的还不熟，标准的并查集算法的两个函数find和union一般都是一个参数（其实可以把那个字典定义成全局变量即可）。
+- [官方答案](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/solution/deng-shi-fang-cheng-de-ke-man-zu-xing-by-leetcode-/)里是直接在Solution类下定义了一个`class UnionFind:`，这样每次find和union的时候就不用多一个参数了（因为`self.parent`直接可以用）。我感觉应该是我写的还不熟，标准的并查集算法的两个函数find和union一般都是一个参数。
+- 其实可以把那个字典定义成全局变量（或者至少find和union都可见的范围）即可——`000990_algo2_2.py`就是这样把两个函数的参数个数都变为了一个。
