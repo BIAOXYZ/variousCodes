@@ -16,3 +16,14 @@ target = [None for i in range(length)]
 # 参考 https://blog.csdn.net/songyunli1111/article/details/79476983，也可以用
 a=[None]*4
 ```
+
+```py
+#// 参考：《一些刷题常用的 python 技巧》 https://hzhao.me/2019/08/16/python-leetcode-trick/
+#// 此外这个帖子里还有关于deque、OrderedDict等的一些内容。
+
+# 1d array
+l = [0 for _ in range(len(array)]
+
+# 2d
+l = [[0] for i in range(cols) for j in range(rows)]
+```
