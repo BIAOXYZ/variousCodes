@@ -15,3 +15,8 @@ Traceback (most recent call last):
     print d['c']
 KeyError: 'c'
 ```
+
+https://leetcode-cn.com/problems/daily-temperatures/solution/mei-ri-wen-du-by-leetcode-solution/
+- > 方法一：暴力
+  * > 反向遍历温度列表。
+- > 方法二：单调栈
