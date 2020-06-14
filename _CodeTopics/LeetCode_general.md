@@ -46,6 +46,10 @@
 
 # [LeetCode探索] (https://leetcode-cn.com/explore/)
 
+面试，怎能错过这些经典 https://leetcode-cn.com/explore/interview/
+
+数据结构，说难也不难 https://leetcode-cn.com/explore/learn/
+
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
 ## 初级算法 https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/
@@ -78,6 +82,10 @@
 |数组和字符串||
 |:--|--|
 | 除自身以外数组的乘积 | 螺旋矩阵 |
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 算法面试题汇总 https://leetcode-cn.com/explore/interview/card/top-interview-questions/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
