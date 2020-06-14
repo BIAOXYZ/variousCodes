@@ -1,5 +1,9 @@
 
 ####################################################################################################
+# 现在看看，发现还是有些写得不好的地方的，比如:
+# 1.第一个if分支，其实只有最开始单调栈monotonicStack为空的时候才会走进去一次，后面完全不可能再进去了。那么从
+#   效率的角度出发，还是一上来就给单调栈把第一个元素贴进去，然后第一个for循环下标从1开始比较好。最开始没这么写
+#   是觉得这么写不好看。。。
 ####################################################################################################
 
 class Solution(object):
@@ -77,3 +81,24 @@ https://leetcode-cn.com/submissions/detail/78864752/
 
 ####################################################################################################
 
+class Solution:
+    def dailyTemperatures(self, T: List[int]) -> List[int]:
+        length = len(T)
+        ans = [0] * length
+        stack = []
+        for i in range(length):
+            temperature = T[i]
+            while stack and temperature > T[stack[-1]]:
+                prev_index = stack.pop()
+                ans[prev_index] = i - prev_index
+            stack.append(i)
+        return ans
+"""
+# 官方答案
+https://leetcode-cn.com/submissions/detail/78863818/
+
+37 / 37 个通过测试用例
+状态：通过
+执行用时：548 ms
+内存消耗：17.3 MB
+"""
