@@ -45,6 +45,8 @@ https://leetcode-cn.com/submissions/detail/78864231/
 """
 
 ####################################################################################################
+# 但是同样的代码在python3提交就AC了。。。
+####################################################################################################
 
 class Solution:
     def dailyTemperatures(self, T: List[int]) -> List[int]:
@@ -80,6 +82,8 @@ https://leetcode-cn.com/submissions/detail/78864752/
 """
 
 ####################################################################################################
+# 下面这个是官方的单调栈解法的答案。
+####################################################################################################
 
 class Solution:
     def dailyTemperatures(self, T: List[int]) -> List[int]:
@@ -101,4 +105,37 @@ https://leetcode-cn.com/submissions/detail/78863818/
 状态：通过
 执行用时：548 ms
 内存消耗：17.3 MB
+"""
+
+####################################################################################################
+# 突然想到，试试官方答案在python2里提交会不会超时？结果果然也没有超时。。。
+# 此外，看运行时间是不是又一次说明了（至少在LeetCode）python2比python3快。。。
+####################################################################################################
+
+class Solution(object):
+    def dailyTemperatures(self, T):
+        """
+        :type T: List[int]
+        :rtype: List[int]
+        """
+
+        # 试试官方答案python2会不会超时
+        length = len(T)
+        ans = [0] * length
+        stack = []
+        for i in range(length):
+            temperature = T[i]
+            while stack and temperature > T[stack[-1]]:
+                prev_index = stack.pop()
+                ans[prev_index] = i - prev_index
+            stack.append(i)
+        return ans
+"""
+# 官方答案（但是在python2提交）
+https://leetcode-cn.com/submissions/detail/78877167/
+
+37 / 37 个通过测试用例
+状态：通过
+执行用时：420 ms
+内存消耗：16.3 MB
 """
