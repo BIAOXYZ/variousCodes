@@ -8,3 +8,11 @@
 - 5435. 并行课程 II https://leetcode-cn.com/contest/biweekly-contest-29/problems/parallel-courses-ii/
 
 # 笔记
+
+## (1)
+
+这个没啥好说的，纯属失误。。。加了个`float()`把其中一个数包住，算的结果就是float了。
+
+## (3)
+
+第三题用的算法感觉还不错，但是也不详细记了，代码里基本有。
