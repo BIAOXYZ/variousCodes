@@ -48,6 +48,20 @@ Remove all occurrences of a value from a list? https://stackoverflow.com/questio
   print x
   # [1, 3, 4, 3]
   ```
+- >
+  ```py
+  x = [1, 2, 3, 4, 2, 2, 3]
+  x = [i for i in x if i != 2]
+  print x
+
+  y = [1, 2, 3, 4, 2, 2, 3]
+  while 2 in y:
+    y.remove(2)
+  print y
+  --------------------------------------------------
+  [1, 3, 4, 3]
+  [1, 3, 4, 3]
+  ```
 
 个人实战：
 ```py
