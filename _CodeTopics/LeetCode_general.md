@@ -122,6 +122,7 @@
 - `LC70` 爬楼梯 【[:watch:][`*`]】
 
 二分查找 https://leetcode-cn.com/tag/binary-search/
+- `704. 二分查找` 【[:bulb:][`*`]】
 
 回溯算法 https://leetcode-cn.com/tag/backtracking/
 
