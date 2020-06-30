@@ -71,8 +71,10 @@ class Solution:
         return -1
 ```
 
-这里也有些关于二分查找边界等的讨论。都不短，回来再看了：
+个人题解里也有些关于二分查找边界等的讨论，回来再看了：
 - 二分查找细节详解，顺便赋诗一首 https://leetcode-cn.com/problems/binary-search/solution/er-fen-cha-zhao-xiang-jie-by-labuladong/
+- 二分查找的 ”循环不变量“ ， 只要理解， 根本不用死记硬背边界条件 https://leetcode-cn.com/problems/binary-search/solution/er-fen-cha-zhao-de-xun-huan-bu-bian-liang-zhi-yao-/
+- 再也不怕女朋友问我二分查找了！【手绘漫画】图解二分查找（修订版） https://leetcode-cn.com/problems/binary-search/solution/zai-ye-bu-pa-nu-peng-you-wen-wo-er-fen-cha-zhao-li/
 
 # 参考链接：
 
