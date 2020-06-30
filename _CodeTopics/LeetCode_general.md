@@ -109,6 +109,10 @@
 
 图 https://leetcode-cn.com/tag/graph/
 
+栈 https://leetcode-cn.com/tag/stack/
+
+堆 https://leetcode-cn.com/tag/heap/
+
 广度优先搜索 https://leetcode-cn.com/tag/breadth-first-search/
 - `LC102` 二叉树的层序遍历 【[:watch:][`*`]】
 
@@ -126,3 +130,7 @@
 - `LC260. 只出现一次的数字 III` https://leetcode-cn.com/problems/single-number-iii/
 
 贪心算法 https://leetcode-cn.com/tag/greedy/
+
+分治算法 https://leetcode-cn.com/tag/divide-and-conquer/
+
+设计 https://leetcode-cn.com/tag/design/
