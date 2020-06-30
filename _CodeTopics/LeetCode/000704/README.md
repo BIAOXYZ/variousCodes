@@ -71,6 +71,9 @@ class Solution:
         return -1
 ```
 
+这里也有些关于二分查找边界等的讨论。都不短，回来再看了：
+- 二分查找细节详解，顺便赋诗一首 https://leetcode-cn.com/problems/binary-search/solution/er-fen-cha-zhao-xiang-jie-by-labuladong/
+
 # 参考链接：
 
 二分查找有几种写法？它们的区别是什么？ - Jason Li的回答 - 知乎 https://www.zhihu.com/question/36132386/answer/530313852
