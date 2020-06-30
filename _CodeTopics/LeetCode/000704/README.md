@@ -28,7 +28,7 @@
 - 左边界left增长时是取：left=mid+1，右边界right减少时却是取：right=mid（我的写法是right=mid-1）。
 - 如果能查到结果，return的不是mid，是left。
 
->> // 回头再细细揣摩下，两个官方都这么写，肯定是有原因的。我的倒是和这个链接（[Python实现二分查找与bisect模块详解](https://www.jb51.net/article/102899.htm)）里的第二种实现类似，但我确实是自己先写完了才发现的- -
+>> //notes：回头再细细揣摩下，两个官方都这么写，肯定是有原因的。我的倒是和这个链接（[《Python实现二分查找与bisect模块详解》](https://www.jb51.net/article/102899.htm)）里的第二种实现类似，但我确实是自己先写完了才发现的- -
 ```py
 我们分别用递归和循环来实现二分查找：
 
@@ -54,6 +54,21 @@ def binary_search_loop(lst,value):
  else:
  return mid 
  return None
+```
+>> //notes：当然，也不必气馁觉得自己就写得很差，因为LeetCode官方的答案也是这么写的（那四个点的写法和我的写法是一样的：(1)边界取`左闭右闭`；(2)while循环用`<=`；(3)右边界减少时用的是`right=mid-1`；(4)如果能找到最后返回的是`mid`。）：
+```py3
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        left, right = 0, len(nums) - 1
+        while left <= right:
+            pivot = left + (right - left) // 2
+            if nums[pivot] == target:
+                return pivot
+            if target < nums[pivot]:
+                right = pivot - 1
+            else:
+                left = pivot + 1
+        return -1
 ```
 
 # 参考链接：
