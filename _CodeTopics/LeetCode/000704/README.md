@@ -27,32 +27,59 @@
 - while那里只取小于，不取等于。
 - 左边界left增长时是取：left=mid+1，右边界right减少时却是取：right=mid（我的写法是right=mid-1）。
 - 如果能查到结果，return的不是mid，是left。
-回头再细细揣摩下，肯定两个官方都这么写，绝对是有原因的。
 
-参考链接：
-- 二分查找有几种写法？它们的区别是什么？ - Jason Li的回答 - 知乎 https://www.zhihu.com/question/36132386/answer/530313852
-- `def bisect_left(a, x, lo=0, hi=None):` https://github.com/python/cpython/blob/2.7/Lib/bisect.py#L67
-  * >
-    ```py
-    def bisect_left(a, x, lo=0, hi=None):
-        """Return the index where to insert item x in list a, assuming a is sorted.
-        
-        The return value i is such that all e in a[:i] have e < x, and all e in
-        a[i:] have e >= x.  So if x already appears in the list, a.insert(x) will
-        insert just before the leftmost x already there.
-        
-        Optional args lo (default 0) and hi (default len(a)) bound the
-        slice of a to be searched.
-        """
+>> // 回头再细细揣摩下，两个官方都这么写，肯定是有原因的。我的倒是和这个链接（[Python实现二分查找与bisect模块详解](https://www.jb51.net/article/102899.htm)）里的第二种实现类似，但我确实是自己先写完了才发现的- -
+```py
+我们分别用递归和循环来实现二分查找：
 
-        if lo < 0:
-            raise ValueError('lo must be non-negative')
-        if hi is None:
-            hi = len(a)
-        while lo < hi:
-            mid = (lo+hi)//2
-            if a[mid] < x: lo = mid+1
-            else: hi = mid
-        return lo
-    ```
-    
+def binary_search_recursion(lst, value, low, high): 
+ if high < low: 
+ return None
+ mid = (low + high) / 2
+ if lst[mid] > value: 
+ return binary_search_recursion(lst, value, low, mid-1) 
+ elif lst[mid] < value: 
+ return binary_search_recursion(lst, value, mid+1, high) 
+ else: 
+ return mid 
+
+def binary_search_loop(lst,value): 
+ low, high = 0, len(lst)-1
+ while low <= high: 
+ mid = (low + high) / 2
+ if lst[mid] < value: 
+ low = mid + 1
+ elif lst[mid] > value: 
+ high = mid - 1
+ else:
+ return mid 
+ return None
+```
+
+# 参考链接：
+
+二分查找有几种写法？它们的区别是什么？ - Jason Li的回答 - 知乎 https://www.zhihu.com/question/36132386/answer/530313852
+
+`def bisect_left(a, x, lo=0, hi=None):` https://github.com/python/cpython/blob/2.7/Lib/bisect.py#L67
+```py
+def bisect_left(a, x, lo=0, hi=None):
+    """Return the index where to insert item x in list a, assuming a is sorted.
+
+    The return value i is such that all e in a[:i] have e < x, and all e in
+    a[i:] have e >= x.  So if x already appears in the list, a.insert(x) will
+    insert just before the leftmost x already there.
+
+    Optional args lo (default 0) and hi (default len(a)) bound the
+    slice of a to be searched.
+    """
+
+    if lo < 0:
+        raise ValueError('lo must be non-negative')
+    if hi is None:
+        hi = len(a)
+    while lo < hi:
+        mid = (lo+hi)//2
+        if a[mid] < x: lo = mid+1
+        else: hi = mid
+    return lo
+```
