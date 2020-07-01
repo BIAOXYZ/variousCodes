@@ -80,6 +80,8 @@ class Solution:
 
 二分查找有几种写法？它们的区别是什么？ - Jason Li的回答 - 知乎 https://www.zhihu.com/question/36132386/answer/530313852
 
+`std::lower_bound` https://en.cppreference.com/w/cpp/algorithm/lower_bound
+
 `def bisect_left(a, x, lo=0, hi=None):` https://github.com/python/cpython/blob/2.7/Lib/bisect.py#L67
 ```py
 def bisect_left(a, x, lo=0, hi=None):
