@@ -27,3 +27,22 @@ l = [0 for _ in range(len(array)]
 # 2d
 l = [[0] for i in range(cols) for j in range(rows)]
 ```
+
+```py
+# 所以上面那个二维数组的初始化其实不对。。。坑。
+
+lenb = 4
+lena = 3
+dp = [[0] for i in range(lenb + 1) for j in range(lena + 1)]
+dp2 = [[0] * (lenb + 1) for _ in range(lena + 1)]
+print "dp= ", dp
+print "dp2= ", dp2
+dp3 = [[0 for i in range(lenb + 1)] for j in range(lena + 1)]
+print "dp3= ", dp3
+print dp2 == dp3
+--------------------------------------------------
+dp=  [[0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0]]
+dp2=  [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+dp3=  [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+True
+```
