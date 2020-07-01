@@ -99,6 +99,8 @@
 
 # LeetCode tag题目
 
+## Ds tags
+
 并查集 https://leetcode-cn.com/tag/union-find/
 
 树 https://leetcode-cn.com/tag/tree/
@@ -113,6 +115,8 @@
 
 堆 https://leetcode-cn.com/tag/heap/
 
+## Algo tags
+
 广度优先搜索 https://leetcode-cn.com/tag/breadth-first-search/
 - `LC102` 二叉树的层序遍历 【[:watch:][`*`]】
 
@@ -124,6 +128,9 @@
 二分查找 https://leetcode-cn.com/tag/binary-search/
 - `704. 二分查找` 【[:bulb:][`*`]】
 
+排序 https://leetcode-cn.com/tag/sort/
+- `912. 排序数组` 【[:bulb:][`*`]】
+
 回溯算法 https://leetcode-cn.com/tag/backtracking/
 
 位运算 https://leetcode-cn.com/tag/bit-manipulation/
@@ -133,5 +140,7 @@
 贪心算法 https://leetcode-cn.com/tag/greedy/
 
 分治算法 https://leetcode-cn.com/tag/divide-and-conquer/
+
+## other tags
 
 设计 https://leetcode-cn.com/tag/design/
