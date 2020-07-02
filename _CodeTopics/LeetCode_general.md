@@ -128,6 +128,9 @@
 - `LC102` 二叉树的层序遍历 【[:watch:][`*`]】
 
 深度优先搜索 https://leetcode-cn.com/tag/depth-first-search/
+- `144. 二叉树的前序遍历` 【[:bulb:][`*`]】
+- `94. 二叉树的中序遍历` 【[:bulb:][`*`]】
+- `Hard` `145. 二叉树的后序遍历` 【[:bulb:][`*`]】
 
 动态规划 https://leetcode-cn.com/tag/dynamic-programming/
 - `LC70` 爬楼梯 【[:watch:][`*`]】
