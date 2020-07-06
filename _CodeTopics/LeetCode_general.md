@@ -137,7 +137,7 @@
 - `LC70` 爬楼梯 【[:watch:][`*`]】
 
 二分查找 https://leetcode-cn.com/tag/binary-search/
-- `704. 二分查找` 【[:bulb:][`*`]】
+- `LC704 二分查找` 【[:bulb:][`*`]】
 - `DUP-LC378 有序矩阵中第K小的元素` 【这里二分查找（官方答案第三个算法）右边界左移时用的是`right = mid`，而不是`right = mid - 1`】
 
 排序 https://leetcode-cn.com/tag/sort/
@@ -156,3 +156,4 @@
 ## other tags
 
 设计 https://leetcode-cn.com/tag/design/
+- `Hard` `460. LFU缓存`
