@@ -6,6 +6,8 @@
 
 动态规划思路详解（c++）——32.最长有效括号 https://leetcode-cn.com/problems/longest-valid-parentheses/solution/dong-tai-gui-hua-si-lu-xiang-jie-c-by-zhanganan042/
 
+『手画图解』栈、动态规划 的思路 https://leetcode-cn.com/problems/longest-valid-parentheses/solution/shou-hua-tu-jie-zhan-de-xiang-xi-si-lu-by-hyj8/
+
 # 残余代码
 
 ```py
