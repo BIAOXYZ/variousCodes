@@ -1,7 +1,7 @@
 
 `32. 最长有效括号` https://leetcode-cn.com/problems/longest-valid-parentheses/solution/zui-chang-you-xiao-gua-hao-by-leetcode-solution/
 - [x] 方法一：动态规划
-- 方法二：栈
+- [x] 方法二：栈
 - 方法三：不需要额外的空间
 
 动态规划思路详解（c++）——32.最长有效括号 https://leetcode-cn.com/problems/longest-valid-parentheses/solution/dong-tai-gui-hua-si-lu-xiang-jie-c-by-zhanganan042/
