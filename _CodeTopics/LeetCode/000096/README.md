@@ -9,3 +9,4 @@
 - 卡特兰数 https://oi-wiki.org/math/catalan/
   * > 以下问题属于 Catalan 数列：
 - 卡特兰数 — 计数的映射方法的伟大胜利 http://lanqi.org/interests/10939/
+- Catalan数详细数学推导及多种应用详解 https://juejin.im/post/5dd567a7e51d4536a759beea
