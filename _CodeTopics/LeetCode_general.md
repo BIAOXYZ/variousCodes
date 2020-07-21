@@ -156,6 +156,8 @@
 
 分治算法 https://leetcode-cn.com/tag/divide-and-conquer/
 
+递归 https://leetcode-cn.com/tag/recursion/
+
 ## other tags
 
 设计 https://leetcode-cn.com/tag/design/
