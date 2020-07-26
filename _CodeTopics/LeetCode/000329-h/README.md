@@ -5,7 +5,7 @@
 
 # 笔记
 
-官方答案里用到了python的装饰器：
+官方答案`方法一`里用到了python的装饰器，并且是带参数的（尽管参数是None）装饰器：
 ```py
 class Solution:
     
@@ -30,4 +30,22 @@ class Solution:
             for j in range(columns):
                 ans = max(ans, dfs(i, j))
         return ans
+```
+
+装饰器 https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584
+```py
+def log(func):
+    def wrapper(*args, **kw):
+        print('call %s():' % func.__name__)
+        return func(*args, **kw)
+    return wrapper
+
+@log
+def now():
+    print('2015-3-25')
+
+now()
+--------------------------------------------------
+call now():
+2015-3-25
 ```
