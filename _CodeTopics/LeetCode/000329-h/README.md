@@ -3,6 +3,10 @@
 - 方法一：记忆化深度优先搜索
 - 方法二：拓扑排序
 
+几个问答看懂深度搜索+记忆化思路, 时间击败99% https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/solution/ji-ge-wen-da-kan-dong-shen-du-sou-suo-ji-yi-hua-sh/
+
+python3 深度优先搜索（记忆化+递归）+动态规划（排序） 详细过程 https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/solution/python3-shen-du-you-xian-sou-suo-ji-yi-hua-di-gui-/
+
 # 笔记
 
 官方答案`方法一`里用到了python的装饰器，并且是带参数的（尽管参数是None）装饰器：
