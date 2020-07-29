@@ -9,7 +9,8 @@ python3 深度优先搜索（记忆化+递归）+动态规划（排序） 详细
 
 # 笔记
 
-官方答案`方法一`里用到了python的装饰器，并且是带参数的（尽管参数是None）装饰器：
+# 1. 官方答案`方法一`：
+
 ```py
 class Solution:
     
@@ -36,6 +37,8 @@ class Solution:
         return ans
 ```
 
+## 1.1 语法点：官方答案`方法一`里用到了python的装饰器，并且是带参数的（尽管参数是None）装饰器。
+
 装饰器 https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584
 ```py
 def log(func):
@@ -52,4 +55,40 @@ now()
 --------------------------------------------------
 call now():
 2015-3-25
+```
+
+## 1.2 语法点：调用类内（类方法外）的成员变量`DIRS`时，除了用`self.DIRS`，还可以像官方答案一样用`Solution.DIRS`。
+
+```py
+for dx, dy in Solution.DIRS:
+```
+
+## 1.3 语法点：`DIRS`内部的元素是tuple时，可以用下面的两个一起遍历的语法；但是如果`DIRS`内部的元素是list时就不行。
+
+```py
+DIRS = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+for dx, dy in DIRS:
+  print dx
+  print dy
+--------------------------------------------------
+-1
+0
+1
+0
+0
+-1
+0
+1
+```
+
+```py
+DIRS2 = [[-1, 0], [1, 0], [0, -1], [0, 1]
+for dx, dy in DIRS2:
+  print dx
+  print dy
+--------------------------------------------------
+  File "main.py", line 3
+    for dx, dy in DIRS2:
+      ^
+SyntaxError: invalid syntax
 ```
