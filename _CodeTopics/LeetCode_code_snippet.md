@@ -18,10 +18,17 @@ for i in range(length-1,-1,-1):
 1
 ```
 
-```
+```py
 # 遍历中删除
 
-
+## `000283.py`用while循环，这里None当然也可以换成0，1之类的具体的某个值。
+while None in nums:
+    nums.pop(nums.index(None))
+    
+## 000026的README里三个链接，以及提交本身采用的倒序for循环
+for i in range(len(nums)-1, 0, -1):
+    if nums[i] == nums[i-1]:
+        nums.pop(i)
 ```
 
 ```py
