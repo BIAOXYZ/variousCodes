@@ -25,7 +25,8 @@ for i in range(length-1,-1,-1):
 while None in nums:
     nums.pop(nums.index(None))
     
-## 000026的README里三个链接，以及提交本身采用的倒序for循环
+## 000026的README里三个链接，以及提交本身采用的倒序for循环删除。
+##（注意，这里是因为数组是有序的，所以“==”后面是“nums[i-1]”。对于general的情况，把这里的“nums[i-1]”换成0，1之类的具体值即可。）
 for i in range(len(nums)-1, 0, -1):
     if nums[i] == nums[i-1]:
         nums.pop(i)
