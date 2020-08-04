@@ -17,3 +17,9 @@
 课程表（拓扑排序：入度表BFS法 / DFS法，清晰图解） https://leetcode-cn.com/problems/course-schedule/solution/course-schedule-tuo-bu-pai-xu-bfsdfsliang-chong-fa/
 
 拓扑排序、深度优先遍历 https://leetcode-cn.com/problems/course-schedule/solution/tuo-bu-pai-xu-by-liweiwei1419/
+
+# 笔记
+
+可能有用的链接：
+- Python中collections.defaultdict()使用 https://www.jianshu.com/p/26df28b3bfc8
+- 图的深度优先遍历和广度优先遍历 https://www.jianshu.com/p/2c2cdcb9de9d
