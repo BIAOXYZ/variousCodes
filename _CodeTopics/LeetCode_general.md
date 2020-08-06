@@ -134,6 +134,9 @@
 堆 https://leetcode-cn.com/tag/heap/
 - `Hard` `23. 合并K个排序链表` 【[:bulb:][`*`] **特点**：堆；链表；分治算法；优先队列】
 
+字典树 https://leetcode-cn.com/tag/trie/
+- `LC208 实现 Trie (前缀树)` https://leetcode-cn.com/problems/implement-trie-prefix-tree/
+
 ## Algo tags
 
 广度优先搜索 https://leetcode-cn.com/tag/breadth-first-search/
@@ -175,6 +178,7 @@
 
 设计 https://leetcode-cn.com/tag/design/
 - `Hard` `460. LFU缓存`
+- `DUP-LC208`
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
