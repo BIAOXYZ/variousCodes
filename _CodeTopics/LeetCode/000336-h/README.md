@@ -50,6 +50,20 @@ False
 False
 ```
 
+## 
+
+```py
+words = ["abcd","dcba","lls","s","sssll"]
+indices = {word[::-1]: i for i, word in enumerate(words)}
+print indices
+
+word = 'xyz'
+print word[::-1]
+--------------------------------------------------
+{'dcba': 0, 'abcd': 1, 's': 3, 'llsss': 4, 'sll': 2}
+zyx
+```
+
 # 其他链接
 
 老司机开车，教会女朋友什么是「马拉车算法」 https://www.cxyxiaowu.com/2665.html
