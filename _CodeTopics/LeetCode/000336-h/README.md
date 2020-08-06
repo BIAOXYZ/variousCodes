@@ -1,4 +1,9 @@
 
+`336. 回文对` https://leetcode-cn.com/problems/palindrome-pairs/solution/hui-wen-dui-by-leetcode-solution/
+- 方法一：枚举前缀和后缀
+  * 字典树存储方式
+  * [x] 哈希表存储方式
+
 # 笔记
 
 ## `deliberate-TLE--000336.py`
@@ -50,8 +55,9 @@ False
 False
 ```
 
-## 
+## `000336_algo2.py`
 
+语法点：
 ```py
 words = ["abcd","dcba","lls","s","sssll"]
 indices = {word[::-1]: i for i, word in enumerate(words)}
