@@ -4,6 +4,17 @@
 
 ## `000100_algo2.py`
 
+`000100_algo2.py`里的那个“**用bfs依次获取所有节点的值并存在一个list中返回**”这个函数`return_all_nodes_bfs()`实现的还是有些问题，想复杂了。结果那个复杂的实现反而不对。我们以这样一颗树为例：
+```
+   1
+  / \
+ 2    3
+/ \  / \
+        4
+```
+很明显，其节点按bfs顺序输出应该是`[1, 2, 3, null/None, null/None, null/None, 4]`
+
+### // `000100_algo2.py` + 1行print语句
 ```py
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -67,4 +78,58 @@ stdout
 [1, 2, 3]
 [1, 2, 3, None, 4]
 ```
+
+### // 改进版的`000100_algo2.py`，主要是bfs遍历时往栈里加孩子节点那里不一样（这里更像`000100_algo2_optm.py`）。
+```py
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution(object):
+    def isSameTree(self, p, q):
+        """
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: bool
+        """
+        
+        def return_all_nodes_bfs(node):
+            if not node:
+                return []
+            temp, res = [node], [node.val]
+            while temp:
+                currnode = temp.pop(0)
+                if currnode == None:
+                    continue
+                else:
+                    temp.append(currnode.left)
+                    temp.append(currnode.right)
+                    res.append(currnode.left.val) if currnode.left else res.append(None)
+                    res.append(currnode.right.val) if currnode.right else res.append(None)
+            while res[-1] == None:
+                res.pop()
+            print res
+            return res
+
+        return return_all_nodes_bfs(p) == return_all_nodes_bfs(q)
+```
+
+```console
+输入
+[1,2,3]
+[1,2,3,null,null,null,4]
+
+输出
+false
+
+预期结果
+false
+
+stdout
+[1, 2, 3]
+[1, 2, 3, None, None, None, 4]
+```
+
 
