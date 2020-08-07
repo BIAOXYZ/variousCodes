@@ -1,4 +1,11 @@
 
+`100. 相同的树` https://leetcode-cn.com/problems/same-tree/solution/xiang-tong-de-shu-by-leetcode-solution/
+- [x] 方法一：深度优先搜索
+- [x] 方法二：广度优先搜索
+
+写树算法的套路框架 https://leetcode-cn.com/problems/same-tree/solution/xie-shu-suan-fa-de-tao-lu-kuang-jia-by-wei-lai-bu-/
+- > PS：我认真写了 100 多篇题解，手把手带你刷力扣，全部发布在 LeetCode刷题套路，持续更新。
+  >> https://labuladong.gitbook.io/algo/
 
 # 笔记
 
@@ -79,7 +86,7 @@ stdout
 [1, 2, 3, None, 4]
 ```
 
-【[:star:][`*`]】 这个实现少了两个`None`的原因就是`节点2`虽然没有孩子，但只要它的下一层不全是`None节点`并且非空子节点按顺序是在它的孩子右边的，那它的俩`None节点`孩子也不能省略。对比一下下面就更明白了：
+【[:star:][`*`]】 这个实现少了两个`None`的原因就是`节点2`虽然没有孩子，但只要它的下一层不全是`None节点`并且非空子节点（这里就是`节点4`）按顺序是在它的孩子右边/后边的，那它的俩`None节点`孩子也不能省略。对比一下下面就更明白了：
 
 ### // 改进版的`000100_algo2.py`（但是这个没有.py文件对应，只是在leetcode系统里自己试了），主要是bfs遍历时往栈里加孩子节点那里不一样（这里更像`000100_algo2_optm.py`）。
 ```py
