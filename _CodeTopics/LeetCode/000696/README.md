@@ -1,4 +1,6 @@
 
+`696. 计数二进制子串` https://leetcode-cn.com/problems/count-binary-substrings/solution/ji-shu-er-jin-zhi-zi-chuan-by-leetcode-solution/
+- [x] 方法一：按字符分组
 
 # 笔记
 
