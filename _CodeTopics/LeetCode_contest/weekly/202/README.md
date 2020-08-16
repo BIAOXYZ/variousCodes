@@ -8,3 +8,11 @@
 - 5490. 吃掉 N 个橘子的最少天数 https://leetcode-cn.com/contest/weekly-contest-202/problems/minimum-number-of-days-to-eat-n-oranges/
 
 # 笔记
+
+## `TLE--202_4.py`
+
+这个程序应该对的，就是plain的动态规划，但是题目里`n`可取的范围太大了导致超时。
+
+## `RE--202_4.py3`
+
+这个之所以突然换成python3是因为要用`functools`里的`lru_cache()`，python2里好像是不能直接用`functools`的。
