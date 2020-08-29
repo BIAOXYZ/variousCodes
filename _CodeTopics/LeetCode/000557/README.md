@@ -3,6 +3,8 @@
 
 ## 语法点
 
+What does n[::-1] means in Python? https://stackoverflow.com/questions/28535392/what-does-n-1-means-in-python
+
 ```py
 s = 'abc de fgh'
 print s[::-1]
