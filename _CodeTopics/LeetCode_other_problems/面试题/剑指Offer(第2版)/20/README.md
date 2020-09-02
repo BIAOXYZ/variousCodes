@@ -31,3 +31,4 @@ C++：模拟题（思路简单，逻辑清晰） https://leetcode-cn.com/problem
                 'SIGN':'sign-for-num'
             },
 ```
+- 同理，拒绝状态其实也不用定义（可以看到代码里定义了也没用上），只要判断最后的状态是否在接受状态集 acceptState 里即可。
