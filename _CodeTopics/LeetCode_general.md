@@ -135,7 +135,7 @@
 - `450. 删除二叉搜索树中的节点` 【[:bulb:][`*`]】
 
 链表 https://leetcode-cn.com/tag/linked-list/
-- `206. 反转链表`
+- `206 反转链表` == `剑指 Offer 24 反转链表`
 
 字符串 https://leetcode-cn.com/tag/string/
 
