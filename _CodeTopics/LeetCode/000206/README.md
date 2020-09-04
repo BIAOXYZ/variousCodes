@@ -2,8 +2,33 @@
 `206. 反转链表` https://leetcode-cn.com/problems/reverse-linked-list/solution/fan-zhuan-lian-biao-by-leetcode/
 - [x] 方法一：迭代
 - [x] 方法二：递归
+- 回复：
+  * https://leetcode-cn.com/problems/reverse-linked-list/solution/fan-zhuan-lian-biao-by-leetcode/334086
+    ```console
+    在其他评论区看到的，写得很清楚，Hope it helps!
+
+    reverseList: head=1
+        reverseList: head=2
+            reverseList: head=3
+                reverseList:head=4
+                    reverseList:head=5 
+                        终止返回
+                    cur = 5
+                    4.next.next->4，即5->4
+                cur=5
+                3.next.next->3，即4->3
+            cur = 5
+            2.next.next->2，即3->2
+        cur = 5
+        1.next.next->1，即2->1
+
+        最后返回cur
+    ```
 
 动画演示+多种解法 206. 反转链表 https://leetcode-cn.com/problems/reverse-linked-list/solution/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/
+- 回复：
+  * https://leetcode-cn.com/problems/reverse-linked-list/solution/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/178642
+  * https://leetcode-cn.com/problems/reverse-linked-list/solution/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/222187
 
 # `000206.py` 和 `000206_optm.py`
 
