@@ -162,6 +162,8 @@
 
 动态规划 https://leetcode-cn.com/tag/dynamic-programming/
 - `LC70` 爬楼梯 【[:watch:][`*`]】
+- `746. 使用最小花费爬楼梯`
+- `198. 打家劫舍`
 
 二分查找 https://leetcode-cn.com/tag/binary-search/
 - `LC704 二分查找` 【[:bulb:][`*`]】
