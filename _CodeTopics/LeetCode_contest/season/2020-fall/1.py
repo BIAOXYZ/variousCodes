@@ -13,3 +13,6 @@ class Solution(object):
                 res[1] = 2 * res[1] + res[0]
         return res[0] + res[1]
     
+"""
+https://leetcode-cn.com/contest/season/2020-fall/submissions/107257570/
+"""
