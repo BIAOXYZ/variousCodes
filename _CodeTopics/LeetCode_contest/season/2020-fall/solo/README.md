@@ -23,7 +23,16 @@ https://leetcode-cn.com/contest/season/2020-fall/ranking/solo/
 
 ### `2_impl.py`
 
-这个相当于二分查找用了``
+这个相当于用了标准库`bisect`里的函数去做二分查找，但是最开始其实没彻底用对。参照下面官方文档里的描述就知道了：`bisect`里这些查找，返回的是“***如果要把目标元素插入数组，应该插入的位置的index***”，而不是我原来想的（也就是标准的提法）“***如果在数组里的话，返回数组里对应元素的index，否则返回-1***”。但是其实这个题用`bisect_right`正好。
+
+`8.5. bisect — 数组二分查找算法` https://docs.python.org/zh-cn/2.7/library/bisect.html
+- > bisect.bisect_left(a, x, lo=0, hi=len(a))
+  * > 返回的插入点 i 可以将数组 a 分成两部分。左侧是 `all(val < x for val in a[lo:i])` ，右侧是 `all(val >= x for val in a[i:hi])` 。
+- > bisect.bisect(a, x, lo=0, hi=len(a))
+  * > 类似于 bisect_left()，但是返回的插入点是 a 中已存在元素 x 的右侧。
+  * > 返回的插入点 i 可以将数组 a 分成两部分。左侧是 all(val <= x for val in a[lo:i])，右侧是 all(val > x for val in a[i:hi]) for the right side。
+
+一个有趣的python排序模块：bisect https://www.cnblogs.com/skydesign/archive/2011/09/02/2163592.html
 
 ```py
 import bisect
@@ -62,6 +71,10 @@ print ind2
 6
 8
 ```
+
+### `2_impl2.py`
+
+相当于自己实现了上面`bisect_right`的功能。其实就是在原来[`000704.py`](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/000704/000704.py)的基础上改了下：***如果查找目标不在数组中***，直接返回最后的那个`left`（注意，此时`left`恰好比`right`多1，因为`right`刚移到`left`左边），符合该题要求；反之，***如果查找目标在数组中***，那么我们必须考虑有多个目标时，要返回最右边的那个的index，下面的写法也做了相应处理。
 
 ```py
 def binary_search(arr, target):
