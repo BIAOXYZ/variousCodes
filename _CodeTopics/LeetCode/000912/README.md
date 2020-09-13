@@ -16,8 +16,30 @@ Python 实现的十大经典排序算法 https://leetcode-cn.com/problems/sort-a
 - **稳定的排序**：
   * 冒泡排序 https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F
 - **不稳定的排序**：
-  * 选择排序 https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F
-  * 快速排序 https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F
+  * [选择排序](https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F)
+  * [快速排序](https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F)
+
+选择排序 https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F
+- > 选择排序（Selection sort）是一种简单直观的排序算法。它的工作原理如下。首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置，然后，再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。以此类推，直到所有元素均排序完毕。
+- > 选择排序的主要优点与数据移动有关。如果某个元素位于正确的最终位置上，则它不会被移动。选择排序每次交换一对元素，它们当中至少有一个将被移到其最终位置上，因此对 n 个元素的表进行排序总共进行至多 n-1 次交换。在所有的完全依靠交换去移动元素的排序方法中，选择排序属于非常好的一种。
+- > 实现示例（Python）
+  ```py
+  def selection_sort(arr):
+      for i in range(len(arr)-1):
+          minIndex=i
+          for j in range(i+1,len(arr)):
+              if arr[minIndex]>arr[j]:
+                  minIndex=j
+          if i==minIndex:
+              pass
+          else:
+              arr[i],arr[minIndex]=arr[minIndex],arr[i]
+      return arr
+
+  if __name__ == '__main__':
+      testlist = [17, 23, 20, 14, 12, 25, 1, 20, 81, 14, 11, 12]
+      print(selection_sort(testlist))
+  ```
 
 快速排序 https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F
 - > 快速排序（英语：Quicksort），又称分区交换排序（partition-exchange sort），简称快排，一种排序算法，最早由东尼·霍尔提出。
