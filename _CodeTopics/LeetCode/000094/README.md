@@ -41,6 +41,10 @@ class Solution:
 
 递归和非递归两种解法以及总结（最好的击败了100%的用户） https://leetcode-cn.com/problems/binary-tree-inorder-traversal/solution/di-gui-he-fei-di-gui-liang-chong-jie-fa-by-sdwwld/
 
+# 笔记
+
+此题和`LC114`的这个解法[`000114.py`](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/000114/000114.py)可能有关。
+
 # `WA--000094_impl2.py`
 
 - 【1】 为什么某些测试用例下，执行代码返回结果正确，但提交解答却出错了 https://support.leetcode-cn.com/hc/kb/article/1194344/
