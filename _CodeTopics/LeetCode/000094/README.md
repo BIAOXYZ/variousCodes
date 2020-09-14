@@ -37,6 +37,10 @@ class Solution:
 
 二叉树的中序遍历 - 迭代法 https://leetcode-cn.com/problems/binary-tree-inorder-traversal/solution/die-dai-fa-by-jason-2/
 
+彻底吃透二叉树的前中后序递归法和迭代法！！ https://leetcode-cn.com/problems/binary-tree-inorder-traversal/solution/che-di-chi-tou-er-cha-shu-de-qian-zhong-hou-xu-d-2/
+
+递归和非递归两种解法以及总结（最好的击败了100%的用户） https://leetcode-cn.com/problems/binary-tree-inorder-traversal/solution/di-gui-he-fei-di-gui-liang-chong-jie-fa-by-sdwwld/
+
 # `WA--000094_impl2.py`
 
 - 【1】 为什么某些测试用例下，执行代码返回结果正确，但提交解答却出错了 https://support.leetcode-cn.com/hc/kb/article/1194344/
