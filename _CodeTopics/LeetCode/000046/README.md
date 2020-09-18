@@ -13,3 +13,6 @@
 # `000046.py`
 
 修正了上面的错误，每次循环把这个数所在的ind也记一下，恢复状态的时候直接按照ind插入回去。
+
+- 对比下[`000216.py`](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/000216/000216.py#L23)可以发现，这次这个题特殊的地方就在于其for循环的list每次会改变，所以不能像[`000216.py`](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/000216/000216.py#L23)一样简单的append回去，必须用insert插回原位置。
+- 再对比下[`000040_ugly.py`](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/000040/000040_ugly.py)，因为`000040_ugly.py`的结果集里的元素（list）不是“必须把所有选择都用一遍”，所以只需append即可。
