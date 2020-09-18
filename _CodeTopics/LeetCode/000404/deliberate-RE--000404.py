@@ -37,3 +37,14 @@ Line 21: UnboundLocalError: local variable 'res' referenced before assignment
 最后执行的输入：
 [3,9,20,null,null,15,7]
 """
+"""
+UnboundLocalError: local variable 'res' referenced before assignment
+    res += node.left.val
+Line 21 in sumOfLeftLeavesFromNode (Solution.py)
+    return sumOfLeftLeavesFromNode(root)
+Line 27 in sumOfLeftLeaves (Solution.py)
+    ret = Solution().sumOfLeftLeaves(param_1)
+Line 50 in _driver (Solution.py)
+    _driver()
+Line 62 in <module> (Solution.py)
+"""
