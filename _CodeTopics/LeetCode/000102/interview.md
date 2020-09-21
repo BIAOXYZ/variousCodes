@@ -15,9 +15,15 @@ int main(int argc, const char* argv[])
     printf("%d\n", x);
 }
 --------------------------------------------------
-main.c:13:9: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+main.c:5:9: warning: large integer implicitly truncated to unsigned type [-Woverflow]
 2
 
 ...Program finished with exit code 0
 Press ENTER to exit console.
 ```
+
+对于c语言中的整型数据溢出问题怎么办？ - 知乎 https://www.zhihu.com/question/55112277
+
+整数溢出 https://wiki.x10sec.org/pwn/integeroverflow/intof/
+
+C语言判断整数溢出 https://www.jianshu.com/p/4f7afa24dcf8
