@@ -18,7 +18,10 @@ o     o
      /  \
    o     o
 ```
-那么这种情况下基本的递推公式是：<br> `node_without_camera = min(left_with_camera + right_with_camera, left_with_camera + right_without_camera, left_without_camera + right_with_camera)`。看起来也很直观，但可惜只有上面这部分是不对的。[`deliberate-WA--000968.py`](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/000968-h/deliberate-WA--000968.py)也就是错在这里，原因见`deliberate-WA--000968.py`里的注释吧：
+那么这种情况下基本的递推公式是：
+<br> `node_without_camera = min(left_with_camera + right_with_camera, left_with_camera + right_without_camera, left_without_camera + right_with_camera)`。
+
+该公式看起来也很直观，但可惜只有这个部分是不对的。[`deliberate-WA--000968.py`](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/000968-h/deliberate-WA--000968.py)也就是错在这里，原因见`deliberate-WA--000968.py`里的注释吧：
 ```py
                 # 已经看出来这里有问题，比如对输入 [0,0,null,0,null,0,null,null,0] 来说。假定某个node的
                 # 右孩子为空，此时 `left_without_camera + right_with_camera` 就不对了。
@@ -38,4 +41,14 @@ o     o
 
 ## 求`node_with_camera`
 
-对于`node_without_camera`，其计算
+对于`node_without_camera`，由于此时`node`上已经有了一个摄像头，那么其左、右子树就不用考虑`node.left`或`node.right`至少其中之一上面还必须有个摄像头来帮忙监控`node`了，所以以左子树为例的话，就看其`left_without_camera`和`left_with_camera`哪个小就用哪个。实际上，甚至是更进一步，以除了这俩值外，`leftleft_without + leftright_without`也是可用的（也就是哪怕`node`的左孩子`node.left`的两个孩子`node.left.left`和`node.left.right`只满足自己，而不管`node.left`都可以，因为`node.left`可以被`node`带的那个摄像头监控）。`node`的右子树和左子树情况是完全一样的。
+
+因此`node_with_camera`整体的递推公式是：
+<br> `node_with_camera = 1 + avail_min_left + avail_min_right`，其中
+<br> `avail_min_left = min(left_with_camera, left_without_camera，leftleft_without + leftright_without)`
+<br> `avail_min_right = min(right_with_camera, right_without_camera，rightleft_without + rightright_without)`
+
+## 其他细节
+
+由于每个节点至少涉及两个值`node_without_camera`和`node_with_camera`，但是题目里给定的TreeNode类型只有一个val，所以想到一个办法：用val的10000以内（题目说了节点最多1000个，其实用四位就够了，但还是图保险用五位）的部分表示`node_without_camera`，超过10000的部分表示`node_with_camera`，也就是下面的这句：
+<br> `with_camera, without_camera = node.val / 10000, node.val % 10000`
