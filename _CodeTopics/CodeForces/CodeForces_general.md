@@ -14,3 +14,7 @@ ITMO Academy: pilot course https://codeforces.com/edu/course/2
 【洛谷日报#19】Codeforces游玩攻略 - ezoixx130的文章 - 知乎 https://zhuanlan.zhihu.com/p/42106537
 
 请问学多少算法可以参加codeforces的div1、div2和div3都比赛？ - kiwiHM的回答 - 知乎 https://www.zhihu.com/question/378582087/answer/1081672478
+
+# CF相关仓库
+
+https://github.com/DionysiosB/CodeForces
