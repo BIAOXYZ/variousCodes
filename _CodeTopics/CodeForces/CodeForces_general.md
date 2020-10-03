@@ -15,6 +15,8 @@ ITMO Academy: pilot course https://codeforces.com/edu/course/2
 
 请问学多少算法可以参加codeforces的div1、div2和div3都比赛？ - kiwiHM的回答 - 知乎 https://www.zhihu.com/question/378582087/answer/1081672478
 
+codeforces 各分段大致对应怎样的 OI 水平？ - 知乎 https://www.zhihu.com/question/368782175
+
 # CF相关仓库
 
 https://github.com/DionysiosB/CodeForces
