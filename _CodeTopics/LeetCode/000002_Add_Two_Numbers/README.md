@@ -1,4 +1,9 @@
 
+`2. 两数相加` https://leetcode-cn.com/problems/add-two-numbers/solution/liang-shu-xiang-jia-by-leetcode-solution/
+- [x] 方法一：模拟
+
+# `000002_Add_Two_Numbers_algo1.py`
+
 >> //notes：其实仔细理一理就清楚了：`ln2.next`归根到底其实质也就是一个`ListNode`类型的`node`。我先把`ln3`赋给这个`node`，然后`ln3`设为`None`，这里改变的是`ln3`啊，`node`**并没有被再次赋值**，所以当然不会改变。
 ```py
 class ListNode(object):
