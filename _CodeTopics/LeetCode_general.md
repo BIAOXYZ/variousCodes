@@ -41,9 +41,8 @@
 
 # [LeetCode探索] (https://leetcode-cn.com/explore/)
 
-面试，怎能错过这些经典 https://leetcode-cn.com/explore/interview/
-
-数据结构，说难也不难 https://leetcode-cn.com/explore/learn/
+- 面试，怎能错过这些经典 ~~https://leetcode-cn.com/explore/interview/~~  -->  https://leetcode-cn.com/leetbook/
+- 数据结构，说难也不难 ~~https://leetcode-cn.com/explore/learn/~~  -->  https://leetcode-cn.com/leetbook/
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
@@ -85,6 +84,11 @@
 
 ## 算法面试题汇总 
 **地址**： ~~https://leetcode-cn.com/explore/interview/card/top-interview-questions/~~ --> https://leetcode-cn.com/leetbook/detail/top-interview-questions/
+
+:u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
+
+## 字节跳动
+**地址**： https://leetcode-cn.com/explore/interview/card/bytedance/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
