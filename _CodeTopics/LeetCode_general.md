@@ -47,7 +47,8 @@
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## 初级算法 https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/
+## 初级算法 
+**地址**： ~~https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/~~  -->  https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/
 
 |数组||
 |:--|--|
@@ -64,7 +65,8 @@
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## 中级算法 https://leetcode-cn.com/explore/interview/card/top-interview-questions-medium/
+## 中级算法 
+**地址**： ~~https://leetcode-cn.com/explore/interview/card/top-interview-questions-medium/~~  -->  https://leetcode-cn.com/leetbook/detail/top-interview-questions-medium/
 
 |数组和字符串||
 |:--|--|
@@ -72,7 +74,8 @@
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## 高级算法 https://leetcode-cn.com/explore/interview/card/top-interview-questions-hard/
+## 高级算法 
+**地址**： ~~https://leetcode-cn.com/explore/interview/card/top-interview-questions-hard/~~  -->  https://leetcode-cn.com/leetbook/detail/top-interview-questions-hard/
 
 |数组和字符串||
 |:--|--|
@@ -80,7 +83,8 @@
 
 :u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307::u6307:
 
-## 算法面试题汇总 https://leetcode-cn.com/explore/interview/card/top-interview-questions/
+## 算法面试题汇总 
+**地址**： ~~https://leetcode-cn.com/explore/interview/card/top-interview-questions/~~ --> https://leetcode-cn.com/leetbook/detail/top-interview-questions/
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
 
