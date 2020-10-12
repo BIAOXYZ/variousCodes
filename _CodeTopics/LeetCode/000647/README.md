@@ -13,6 +13,14 @@ Manacher 只会求最长回文子串？太浪费了！ https://leetcode-cn.com/p
 
 最长回文子串 https://zh.wikipedia.org/wiki/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2 || Longest palindromic substring https://en.wikipedia.org/wiki/Longest_palindromic_substring
 
+【LPS (Longest Palindromic Substring) algorithms from www.geeksforgeeks.org 】：
+- Manacher’s Algorithm – Linear Time Longest Palindromic Substring – Part 1 https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-1/
+  * > We have already discussed Naïve `[O(n^3)]` and quadratic `[O(n^2)]` approaches at [Set 1]() and [Set 2]().
+  * > To find Longest Palindromic Substring of a string of length `N`, one way is take each possible `2*N + 1` centers (the `N` character positions, `N-1` between two character positions and `2` positions at left and right ends), do the character match in both left and right directions at each `2*N+ 1` centers and keep track of LPS. This approach takes `O(N^2)` time and that’s what we are doing in [Set 2]().
+    >> //notes：这里其实遍历`2N-1`个位置就可以了，本题（`LC647`）的官方答案里中心扩散法部分也是这么用的。因为，以原始字符串第一个字符之前和最后一个字符之后的位置为中心就不可能形成回文子串。
+- Manacher’s Algorithm – Linear Time Longest Palindromic Substring – Part 2 https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-2/
+- Manacher’s Algorithm – Linear Time Longest Palindromic Substring – Part 4 https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-4/
+
 Manacher’s Algorithm Explained— Longest Palindromic Substring https://medium.com/hackernoon/manachers-algorithm-explained-longest-palindromic-substring-22cb27a5e96f
 
 Manacher's Algorithm - Finding all sub-palindromes in O(N) https://cp-algorithms.com/string/manacher.html
