@@ -17,7 +17,12 @@ Manacher 只会求最长回文子串？太浪费了！ https://leetcode-cn.com/p
 - Manacher’s Algorithm – Linear Time Longest Palindromic Substring – Part 1 https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-1/
   * > We have already discussed Naïve `[O(n^3)]` and quadratic `[O(n^2)]` approaches at [Set 1]() and [Set 2]().
   * > To find Longest Palindromic Substring of a string of length `N`, one way is take each possible `2*N + 1` centers (the `N` character positions, `N-1` between two character positions and `2` positions at left and right ends), do the character match in both left and right directions at each `2*N+ 1` centers and keep track of LPS. This approach takes `O(N^2)` time and that’s what we are doing in [Set 2]().
-    >> //notes：这里其实遍历`2N-1`个位置就可以了，本题（`LC647`）的官方答案里中心扩散法部分也是这么用的。因为，以原始字符串第一个字符之前和最后一个字符之后的位置为中心就不可能形成回文子串。
+    >> //notes：(1) 对于中心扩散算法来说，其实遍历`2N-1`个位置就可以了，本题（`LC647`）的官方答案里中心扩散法算法实现部分也是这么用的。因为，以原始字符串第一个字符之前和最后一个字符之后的位置为中心就不可能形成回文子串。 (2) 但是对于马拉车算法，还是要在首尾也插入分隔字符的。
+  * > ***Position*** and ***index*** for the string are two different things here. For a given string `S` of length `N`, indexes will be from `0` to `N-1` (total `N` indexes) and positions will be from `0` to `2*N` (total `2*N+1` positions).
+  * > LPS length value can be interpreted in two ways, one in terms of index and second in terms of position. LPS value `d` at position `I` (`L[i] = d`) tells that:
+    + > Substring from position `i-d` to `i+d` is a palindrome of length `d` (in terms of ***position***)
+      > 
+    + > Substring from index `(i-d)/2` to `[(i+d)/2 – 1]` is a palindrome of length `d` (in terms of ***index***)
 - Manacher’s Algorithm – Linear Time Longest Palindromic Substring – Part 2 https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-2/
 - Manacher’s Algorithm – Linear Time Longest Palindromic Substring – Part 4 https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-4/
 
