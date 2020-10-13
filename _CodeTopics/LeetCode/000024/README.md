@@ -96,3 +96,11 @@ if  __name__ == '__main__':
     print("------------------------------\nThe main program has ended!\n------------------------------\n")
     
 ```
+
+# `000024.py` --> `000024_impl.py` --> `000024_impl2.py` --> `000024_impl3.py`
+
+`000024.py` --> `000024_impl.py` --> `000024_impl2.py` --> `000024_impl3.py` 是一个不断优化的过程：
+- `000024.py`：需要额外的逻辑处理`head`和`head.next`，但是这部分和general的交换两节点其实只有一点不同。
+- `000024_impl.py`：可以不用额外的逻辑处理`head`和`head.next`了。
+- `000024_impl2.py`：不使用while True了，但是里面还得自己break一层。
+- `000024_impl3.py`：无需自己手动break出while循环的逻辑了。
