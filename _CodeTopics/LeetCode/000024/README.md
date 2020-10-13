@@ -1,7 +1,19 @@
 
 `24. 两两交换链表中的节点` https://leetcode-cn.com/problems/swap-nodes-in-pairs/solution/liang-liang-jiao-huan-lian-biao-zhong-de-jie-di-91/
-- 方法一：递归
+- [x] 方法一：递归
 - [x] 方法二：迭代
+
+# 测试用例
+
+```console
+[]
+[1]
+[1,2]
+[1,2,3]
+[1,2,3,4]
+[1,2,3,4,5]
+[1,2,3,4,5,6]
+```
 
 # `deliberate-WA--000024.py`
 
