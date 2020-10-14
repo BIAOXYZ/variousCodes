@@ -37,6 +37,9 @@ dp数组：
 
 【[:star:][`*`]】 Manacher's Algorithm https://www.hackerrank.com/topics/manachers-algorithm 【1】 + 官方题解里`方法二：Manacher 算法`部分 【2】
 >> //notes：马拉车算法的核心点其实就是：记录当前所有回文串能达到的最靠右的边界`R`、`R`对应的回文中心`C`和`R`对应的回文左边界`L`（会先对字符串插入一些不存在的字符，从而保证新的串`T`里的回文子串都是奇数长度的）。然后对于每一个新的位置`i`，其在`C`左边有一个关于`C`对称的位置`i'`。以`i'`为回文中心会形成一个回文子串，根据这个回文子串的左边界和`L`的关系会有三种情况，然后依次分析即可。
+- > Case 1: The length of the longest palindrome centered at `i'` is such that the left boundary of the palindrome does not extend beyond or until the left boundary of the longest palindrome centered at `C`.
+- > Case 2: Consider that the palindrome centred at `i'` extends beyond the left boundary of the palindrome centred at `C`.
+- > Case 3: In this case, The left boundary of the palindrome centred at `i'` is the same as the left boundary of the palindrome centred at `C`.
 
 最长回文子串 https://zh.wikipedia.org/wiki/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2 || Longest palindromic substring https://en.wikipedia.org/wiki/Longest_palindromic_substring
 
