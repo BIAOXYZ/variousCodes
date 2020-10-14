@@ -6,6 +6,33 @@
 
 Manacher 只会求最长回文子串？太浪费了！ https://leetcode-cn.com/problems/palindromic-substrings/solution/manacher-zhi-hui-qiu-zui-chang-hui-wen-zi-chuan-ta/
 
+# 测试用例
+
+```console
+"abc"
+"aaa"
+"abababa"
+"abaaba"
+"cdbabcbabdbab"
+"babcbabcbaccba"
+
+dp数组：
+[0, 1, 0, 1, 0, 1, 0]
+[0, 1, 2, 3, 2, 1, 0]
+[0, 1, 0, 3, 0, 5, 0, 7, 0, 5, 0, 3, 0, 1, 0]
+[0, 1, 0, 3, 0, 1, 6, 1, 0, 3, 0, 1, 0]
+[0, 1, 0, 1, 0, 1, 0, 3, 0, 1, 0, 9, 0, 1, 0, 3, 0, 1, 0, 7, 0, 1, 0, 3, 0, 1, 0]
+[0, 1, 0, 3, 0, 1, 0, 7, 0, 1, 0, 9, 0, 1, 0, 5, 0, 1, 0, 1, 0, 1, 2, 1, 0, 1, 0, 1, 0]
+
+回文子串数：
+3
+6
+16
+11
+23
+25
+```
+
 # 其他参考链接
 
 【[:star:][`*`]】 Manacher's Algorithm https://www.hackerrank.com/topics/manachers-algorithm + 官方题解里`方法二：Manacher 算法`部分
