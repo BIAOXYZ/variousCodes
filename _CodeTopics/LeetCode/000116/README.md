@@ -1,7 +1,10 @@
 
 `116. 填充每个节点的下一个右侧节点指针` https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/solution/tian-chong-mei-ge-jie-dian-de-xia-yi-ge-you-ce-2-4/
 - [x] 方法一：层次遍历
-- 方法二：使用已建立的 next 指针
+- [x] 方法二：使用已建立的 next 指针
+
+BFS、DFS、还有模拟递归 https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/solution/bfs-dfs-huan-you-mo-ni-di-gui-by-suo-yi-ta-xi-huan/
+- > `struct Node** q = (struct Node**)malloc(sizeof(struct Node*) * 5001);`
 
 # 测试用例
 
