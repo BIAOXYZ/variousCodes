@@ -41,13 +41,13 @@ dp数组：
 - > Case 2: Consider that the palindrome centred at `i'` extends beyond the left boundary of the palindrome centred at `C`.
 - > Case 3: In this case, The left boundary of the palindrome centred at `i'` is the same as the left boundary of the palindrome centred at `C`.
 
->> //notes：下面的【3】和【4】讲得更细致，不过【4】最后分了四个case，其实不如【1】里的三种情况更清楚（【2】就更不用说了，对实现马拉车算法最有优势，写法最简单粗暴）。此外，【3】和【4】里的图都特别棒，并且更清楚地阐明了辅助数组里`f[i]`（我用的符号是`dp[i]`）的概念：就是表示以`i`为中心的最大回文串的
+>> //notes：下面的【3】和【4】讲得更细致，不过【4】最后分了四个case，其实不如【1】里的三种情况更清楚（【2】就更不用说了，对实现马拉车算法最有优势，写法最简单粗暴）。此外，【3】和【4】里的图都特别棒，并且更清楚地阐明了辅助数组里`f[i]`（我用的符号是`dp[i]`）的概念：就是表示以`i`为中心的最长**全字符回文子串**的长度。这个值也等价于以`i`为中心的（**但是不包含`i`**）最长回文子串的半径。
 
 `"abababa"`
-- ![](https://media.geeksforgeeks.org/wp-content/uploads/ltp3.jpg)
+- ![](https://media.geeksforgeeks.org/wp-content/uploads/ltp3.jpg)  ![](https://media.geeksforgeeks.org/wp-content/uploads/ltp5.jpg)
 
 `"abaaba"`
-- ![](https://media.geeksforgeeks.org/wp-content/uploads/ltp4.jpg)
+- ![](https://media.geeksforgeeks.org/wp-content/uploads/ltp4.jpg)  ![](https://media.geeksforgeeks.org/wp-content/uploads/ltp5.jpg)
 
 【LPS (Longest Palindromic Substring) algorithms from www.geeksforgeeks.org 】：
 - Manacher’s Algorithm – Linear Time Longest Palindromic Substring – Part 1 https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-1/ 【[:star:][`*`]】【3】
