@@ -3,6 +3,23 @@
 - [x] 方法一：层次遍历
 - [x] 方法二：使用已建立的 next 指针
 
+BFS和递归共4种方式解决（最后3种击败了100%的用户） https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/solution/bfshe-di-gui-zui-hou-liang-chong-ji-bai-liao-100-2/
+- > 3，递归方式
+  ```java
+      public Node connect(Node root) {
+          dfs(root, null);
+          return root;
+      }
+
+      private void dfs(Node curr, Node next) {
+          if (curr == null)
+              return;
+          curr.next = next;
+          dfs(curr.left, curr.right);
+          dfs(curr.right, curr.next == null ? null : curr.next.left);
+      }
+  ```
+
 BFS、DFS、还有模拟递归 https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/solution/bfs-dfs-huan-you-mo-ni-di-gui-by-suo-yi-ta-xi-huan/
 - > `struct Node** q = (struct Node**)malloc(sizeof(struct Node*) * 5001);`
 
