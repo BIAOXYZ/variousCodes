@@ -3,6 +3,8 @@
 - [x] 方法一：层次遍历
 - [x] 方法二：使用已建立的 next 指针
 
+「手画图解」DFS 递归 | 易于理解 https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/solution/shou-hua-tu-jie-dfs-di-gui-yi-yu-li-jie-by-xiao_be/
+
 BFS和递归共4种方式解决（最后3种击败了100%的用户） https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/solution/bfshe-di-gui-zui-hou-liang-chong-ji-bai-liao-100-2/
 - > 3，递归方式
   ```java
