@@ -41,7 +41,13 @@ dp数组：
 - > Case 2: Consider that the palindrome centred at `i'` extends beyond the left boundary of the palindrome centred at `C`.
 - > Case 3: In this case, The left boundary of the palindrome centred at `i'` is the same as the left boundary of the palindrome centred at `C`.
 
-最长回文子串 https://zh.wikipedia.org/wiki/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2 || Longest palindromic substring https://en.wikipedia.org/wiki/Longest_palindromic_substring
+>> //notes：下面的【3】和【4】讲得更细致，不过【4】最后分了四个case，其实不如【1】里的三种情况更清楚（【2】就更不用说了，对实现马拉车算法最有优势，写法最简单粗暴）。此外，【3】和【4】里的图都特别棒，并且更清楚地阐明了辅助数组里`f[i]`（我用的符号是`dp[i]`）的概念：就是表示以`i`为中心的最大回文串的
+
+`"abababa"`
+- ![](https://media.geeksforgeeks.org/wp-content/uploads/ltp3.jpg)
+
+`"abaaba"`
+- ![](https://media.geeksforgeeks.org/wp-content/uploads/ltp4.jpg)
 
 【LPS (Longest Palindromic Substring) algorithms from www.geeksforgeeks.org 】：
 - Manacher’s Algorithm – Linear Time Longest Palindromic Substring – Part 1 https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-1/ 【[:star:][`*`]】【3】
@@ -60,6 +66,8 @@ dp数组：
   * > **Case 4**: L[currentRightPosition] > = centerRightPosition – currentRightPosition applies when:
     >> //notes：其实这里严格来讲应该是等于而不是大于等于，因为`左回文的左边界`超出了`中心回文的左边界`，意味着`右回文的右边界`在扩散时，其右边一旦超出`中心回文的右边界`，立刻就会不匹配。
 - Manacher’s Algorithm – Linear Time Longest Palindromic Substring – Part 4 https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-4/
+
+最长回文子串 https://zh.wikipedia.org/wiki/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2 || Longest palindromic substring https://en.wikipedia.org/wiki/Longest_palindromic_substring
 
 Manacher’s Algorithm Explained— Longest Palindromic Substring https://medium.com/hackernoon/manachers-algorithm-explained-longest-palindromic-substring-22cb27a5e96f
 
