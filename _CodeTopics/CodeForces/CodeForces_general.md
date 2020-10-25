@@ -17,6 +17,10 @@ ITMO Academy: pilot course https://codeforces.com/edu/course/2
 
 codeforces 各分段大致对应怎样的 OI 水平？ - 知乎 https://www.zhihu.com/question/368782175
 
+最新codeforces的rating评级 https://my.oschina.net/u/4364921/blog/4268576 || https://www.luogu.com.cn/blog/az111522240/codeforces-yan-se-ping-ji
+
+codeforces rating改革后，rating2200（master橙名）是什么水平？ - 知乎 https://www.zhihu.com/question/65759982
+
 # CF相关仓库
 
 https://github.com/DionysiosB/CodeForces
