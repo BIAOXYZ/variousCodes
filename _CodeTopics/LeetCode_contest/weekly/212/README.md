@@ -16,3 +16,5 @@
 ## (3)
 
 这个题没写出来有点可惜。看起来像是熟悉的套路，应该是 “dp + DFS或BFS” 吧？主要能从上下左右四个方向进入格子，一时没想到怎么处理。当然也是因为跟铭杰聊到字节职级这个事了，耽误了时间。
+
+最小体力消耗路径 https://leetcode-cn.com/problems/path-with-minimum-effort/solution/zui-xiao-ti-li-xiao-hao-lu-jing-by-zerotrac2/
