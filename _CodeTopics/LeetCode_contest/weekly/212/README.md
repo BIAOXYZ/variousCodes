@@ -8,3 +8,11 @@
 - 5156. 矩阵转换后的秩 https://leetcode-cn.com/contest/weekly-contest-212/problems/rank-transform-of-a-matrix/
 
 # 笔记
+
+## (1)
+
+没注意，忘了应该倒序遍历的。
+
+## (3)
+
+这个题没写出来有点可惜。看起来像是熟悉的套路，应该是 “dp + DFS或BFS” 吧？主要能从上下左右四个方向进入格子，一时没想到怎么处理。当然也是因为跟铭杰聊到字节职级这个事了，耽误了时间。
