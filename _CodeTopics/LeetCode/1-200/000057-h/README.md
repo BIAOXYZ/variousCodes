@@ -1,5 +1,6 @@
 
 `57. 插入区间` https://leetcode-cn.com/problems/insert-interval/solution/cha-ru-qu-jian-by-leetcode-solution/
+- [x] 方法一：模拟
 
 # 测试用例
 
@@ -16,4 +17,10 @@
 [4,8]
 []
 [5,7]
+
+# 下面这俩输入，官方也没有输出，所以是不符合要求的输入。也就是输入newInterval不会是空集。
+[]
+[]
+[[1,2]]
+[]
 ```
