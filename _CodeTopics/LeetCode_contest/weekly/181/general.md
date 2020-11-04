@@ -17,10 +17,13 @@ target = [None for i in range(length)]
 a=[None]*4
 ```
 
-```py
-#// 参考：《一些刷题常用的 python 技巧》 https://hzhao.me/2019/08/16/python-leetcode-trick/
-#// 此外这个帖子里还有关于deque、OrderedDict等的一些内容。
+## （后来补的各种列表推导式、字典推导式、集合推导式）
 
+`5.1.3. 列表推导式` https://docs.python.org/zh-cn/3/tutorial/datastructures.html#list-comprehensions
+
+一些刷题常用的 python 技巧 https://hzhao.me/2019/08/16/python-leetcode-trick/
+>> notes：此外这个帖子里还有关于deque、OrderedDict等的一些内容。
+```py
 # 1d array
 l = [0 for _ in range(len(array)]
 
@@ -45,4 +48,14 @@ dp=  [[0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0],
 dp2=  [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
 dp3=  [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
 True
+```
+
+Python的各种推导式（列表推导式、字典推导式、集合推导式） https://blog.csdn.net/yjk13703623757/article/details/79490476
+```py
+# 快速更换key和value
+mcase = {'a': 10, 'b': 34}
+mcase_frequency = {v: k for k, v in mcase.items()}
+print(mcase_frequency)
+
+#  Output: {10: 'a', 34: 'b'}
 ```
