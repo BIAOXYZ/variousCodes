@@ -1,5 +1,12 @@
 
-# python2
+# C
+
+```c
+#define MAX( a, b ) ((a) > (b) ? (a) : (b))
+#define MIN( a, b ) ((a) < (b) ? (a) : (b))
+```
+
+# Python2
 
 ```py
 # 倒序遍历数组 -- 分别以`range(length-1`、`range(-1`为关键词在仓库中搜索，能发现不少。比如`000066.py`、`000067_algo2.py`
