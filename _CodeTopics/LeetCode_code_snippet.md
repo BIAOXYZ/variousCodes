@@ -6,6 +6,16 @@
 #define MIN( a, b ) ((a) < (b) ? (a) : (b))
 ```
 
+C语言常用宏的使用小结 https://juejin.im/post/6844903950429192200
+```c
+// 5.返回数组元素的个数
+#define ARRAY_SIZE(a) (sizeof((a)) / sizeof((a[0])))
+
+// 15.求最大值
+#define MAX2(a,b)  ((a) > (b) ? (a) : (b))
+#define MAX3(a,b,c)  ((a) > (b) ? ((a) > (c) ? (a) : (c)) : ((b) > (c) ? (b) : (c)))
+```
+
 # Python2
 
 ```py
