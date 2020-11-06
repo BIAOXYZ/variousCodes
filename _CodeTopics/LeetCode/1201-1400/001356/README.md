@@ -21,3 +21,9 @@ https://leetcode-cn.com/problems/sort-integers-by-the-number-of-1-bits/comments/
 [10000,10000]
 [2,3,5,7,11,13,17,19]
 ```
+
+# `001356_algo2.c`
+
+## 语法点
+
+C语言的`qsort()`函数。更多详情见 [`stdlib`](https://github.com/BIAOXYZ/myNotes/blob/master/programming_notes/programming_languages/prog_lang_c/C_packages/stdlib.h.md)部分的总结吧。
