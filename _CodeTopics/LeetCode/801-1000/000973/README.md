@@ -6,6 +6,8 @@
 
 三种解法：快排、堆排与偷懒 https://leetcode-cn.com/problems/k-closest-points-to-origin/solution/tou-lan-yu-kuai-pai-by-jalan/
 
+C语言三种解法，含总结 https://leetcode-cn.com/problems/k-closest-points-to-origin/solution/cyu-yan-san-chong-jie-fa-han-zong-jie-by-gan-cui-j/
+
 # 测试用例
 
 ```
