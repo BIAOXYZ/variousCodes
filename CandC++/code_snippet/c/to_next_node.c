@@ -21,6 +21,19 @@ struct ListNode {
     struct ListNode *next;
 }LNODE, *LNODE_PTR;
 
+/*
+后来知道为啥结构体别名的指针形式不行了，因为忘了typedef了。。。如果前面ListNode定义时加上typedef：
+typedef struct ListNode {
+    int val;
+    struct ListNode *next;
+}LNODE, *LNODE_PTR;
+
+则下面三种都可以成功创建指向ListNode的指针：
+    struct ListNode* node5 = creat_node(5);
+    LNODE* node5 = creat_node(5);
+    LNODE_PTR node5 = creat_node(5);
+*/
+
 struct ListNode* creat_node(int val) {
     struct ListNode* node = NULL;
     // 我甚至都没想起来malloc是stdlib.h库，memset是string.h库的。
