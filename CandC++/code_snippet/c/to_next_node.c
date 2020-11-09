@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// 树的struct定义放这儿吧，但是这个例子没用到。
+// struct TreeNode {
+//     int val;
+//     struct TreeNode *left;
+//     struct TreeNode *right;
+// };
+
+
+// 这个是LeetCode原版的，结构体定义完没有带别名。
+// 一个问题是，结构体别名的指针形式不知道为啥不行。先不管了。
+// struct ListNode {
+//     int val;
+//     struct ListNode *next;
+// };
+struct ListNode {
+    int val;
+    struct ListNode *next;
+}LNODE;
+
+struct ListNode* creat_node(int val) {
+    struct ListNode* node = NULL;
+    // 我甚至都没想起来malloc是stdlib.h库，memset是string.h库的。
+    node = (struct ListNode*)malloc(sizeof(LNODE));
+    if (NULL == node){
+        printf("malloc failed!\n");
+    }
+    memset(node,0,sizeof(LNODE));
+    node->val = val;
+    node->next = NULL;
+    return node;
+}
+
+void change_curr_to_next(struct ListNode* currNode) {
+    currNode = currNode->next;
+    return;
+}
+void ptr_change_curr_to_next(struct ListNode** ptr_to_currNode) {
+    *ptr_to_currNode = (*ptr_to_currNode)->next;
+    return;
+}
+
+int main()
+{
+    struct ListNode* node1 = creat_node(1);
+    struct ListNode* node2 = creat_node(2);
+    struct ListNode* node3 = creat_node(3);
+    struct ListNode* node4 = creat_node(4);
+    
+    node1->next = node2;
+    node3->next = node4;
+    
+    change_curr_to_next(node1);
+    printf("After change without pointer, node1 is not the next, because its value is unchanged: %d\n", node1->val);
+    ptr_change_curr_to_next(&node3);
+    printf("After change with pointer, node3 is the next, because its value is changed: %d\n", node3->val);
+    return 0;
+}
+
+/******************************************************************************
+After change without pointer, node1 is not the next, because its value is unchanged: 1                                
+After change with pointer, node3 is the next, because its value is changed: 4
+*******************************************************************************/
