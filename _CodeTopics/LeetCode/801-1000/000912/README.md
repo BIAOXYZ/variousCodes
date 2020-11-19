@@ -14,10 +14,47 @@ Python 实现的十大经典排序算法 https://leetcode-cn.com/problems/sort-a
 
 排序算法 https://zh.wikipedia.org/wiki/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95 || Sorting algorithm https://en.wikipedia.org/wiki/Sorting_algorithm
 - **稳定的排序**：
-  * 冒泡排序 https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F
+  * [冒泡排序](https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F) (bubble sort)
+  * [插入排序](https://zh.wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F) (insertion sort)
+  * [桶排序](https://zh.wikipedia.org/wiki/%E6%A1%B6%E6%8E%92%E5%BA%8F) (bucket sort)
+  * 计数排序 (counting sort)
+  * 归并排序 (merge sort)
+  * 基数排序 (radix sort)
 - **不稳定的排序**：
-  * [选择排序](https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F)
-  * [快速排序](https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F)
+  * [选择排序](https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F) (selection sort)
+  * 希尔排序 (shell sort)
+  * 堆排序 (heap sort)
+  * [快速排序](https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F) (quick sort)
+
+## 插入排序
+
+插入排序 https://zh.wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F
+- > Insertion Sort 和打扑克牌时，从牌桌上逐一拿起扑克牌，在手上排序的过程相同。
+  ```console
+  举例：
+  
+  Input: {5 2 4 6 1 3}。
+  首先拿起第一张牌, 手上有 {5}。
+  拿起第二张牌 2, 把 2 insert 到手上的牌 {5}, 得到 {2 5}。
+  拿起第三张牌 4, 把 4 insert 到手上的牌 {2 5}, 得到 {2 4 5}。
+  
+  以此类推。
+  ```
+- > 此范例程序以C语言实现。
+  ```c
+  void insertion_sort(int arr[], int len){
+          int i,j,key;
+          for (i=1;i!=len;++i){
+                  key = arr[i];
+                  j=i-1;
+                  while((j>=0) && (arr[j]>key)) {
+                          arr[j+1] = arr[j];
+                          j--;
+                  }
+                  arr[j+1] = key;
+          }
+  }
+  ```
 
 ## 选择排序
 
