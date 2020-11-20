@@ -8,6 +8,13 @@ Python 实现的十大经典排序算法 https://leetcode-cn.com/problems/sort-a
 
 当我谈排序时，我在谈些什么🤔 https://leetcode-cn.com/problems/sort-an-array/solution/dang-wo-tan-pai-xu-shi-wo-zai-tan-xie-shi-yao-by-s/
 
+# 测试用例
+
+```
+[5,2,3,1]
+[5,1,1,2,0,0]
+```
+
 # 排序算法知识总结
 
 >> //notes：冒泡排序每次把最大的元素排到其位置（最后）；选择排序每次把最小的元素排到其位置（最前）；快速排序每次把某个选定的元素排到其位置。
@@ -18,7 +25,7 @@ Python 实现的十大经典排序算法 https://leetcode-cn.com/problems/sort-a
   * [插入排序](https://zh.wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F) (insertion sort)
   * [桶排序](https://zh.wikipedia.org/wiki/%E6%A1%B6%E6%8E%92%E5%BA%8F) (bucket sort)
   * 计数排序 (counting sort)
-  * 归并排序 (merge sort)
+  * [归并排序](https://zh.wikipedia.org/wiki/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F) (merge sort)
   * 基数排序 (radix sort)
 - **不稳定的排序**：
   * [选择排序](https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F) (selection sort)
@@ -29,6 +36,8 @@ Python 实现的十大经典排序算法 https://leetcode-cn.com/problems/sort-a
 ## 插入排序
 
 插入排序 https://zh.wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F
+- > 插入排序（英语：Insertion Sort）是一种简单直观的排序算法。它的工作原理是通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。插入排序在实现上，通常采用in-place排序（即只需用到`O(1)`的额外空间的排序），因而在从后向前扫描过程中，需要反复把已排序元素逐步向后挪位，为最新元素提供插入空间。
+- > 最早拥有排序概念的机器出现在1901至1904年间由[赫尔曼·何乐礼]()发明出使用基数排序法的分类机，此机器系统包括打孔，制表等功能，1908年分类机第一次应用于人口普查，并且在两年内完成了所有的普查数据和归档。 赫尔曼·何乐礼在1896年创立的分类机公司的前身，为[电脑制表记录公司（CTR）]()。他在电脑制表记录公司曾担任顾问工程师，直到1921年退休，而电脑制表记录公司在1924年正式改名为[IBM]()。
 - > Insertion Sort 和打扑克牌时，从牌桌上逐一拿起扑克牌，在手上排序的过程相同。
   ```console
   举例：
@@ -54,6 +63,98 @@ Python 实现的十大经典排序算法 https://leetcode-cn.com/problems/sort-a
                   arr[j+1] = key;
           }
   }
+  ```
+
+## 归并排序
+
+归并排序 https://zh.wikipedia.org/wiki/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F
+- > 归并排序（英语：Merge sort，或mergesort），是创建在归并操作上的一种有效的排序算法，效率为 `O(n*logn)`（大O符号）。1945年由约翰·冯·诺伊曼首次提出。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用，且各层分治递归可以同时进行。
+- > **C语言**
+  * > 迭代版：
+    ```c
+    int min(int x, int y) {
+        return x < y ? x : y;
+    }
+    void merge_sort(int arr[], int len) {
+        int *a = arr;
+        int *b = (int *) malloc(len * sizeof(int));
+        int seg, start;
+        for (seg = 1; seg < len; seg += seg) {
+            for (start = 0; start < len; start += seg * 2) {
+                int low = start, mid = min(start + seg, len), high = min(start + seg * 2, len);
+                int k = low;
+                int start1 = low, end1 = mid;
+                int start2 = mid, end2 = high;
+                while (start1 < end1 && start2 < end2)
+                    b[k++] = a[start1] < a[start2] ? a[start1++] : a[start2++];
+                while (start1 < end1)
+                    b[k++] = a[start1++];
+                while (start2 < end2)
+                    b[k++] = a[start2++];
+            }
+            int *temp = a;
+            a = b;
+            b = temp;
+        }
+        if (a != arr) {
+            int i;
+            for (i = 0; i < len; i++)
+                b[i] = a[i];
+            b = a;
+        }
+        free(b);
+    }
+    ```
+  * > 递归版：
+    ```c
+    void merge_sort_recursive(int arr[], int reg[], int start, int end) {
+        if (start >= end)
+            return;
+        int len = end - start, mid = (len >> 1) + start;
+        int start1 = start, end1 = mid;
+        int start2 = mid + 1, end2 = end;
+        merge_sort_recursive(arr, reg, start1, end1);
+        merge_sort_recursive(arr, reg, start2, end2);
+        int k = start;
+        while (start1 <= end1 && start2 <= end2)
+            reg[k++] = arr[start1] < arr[start2] ? arr[start1++] : arr[start2++];
+        while (start1 <= end1)
+            reg[k++] = arr[start1++];
+        while (start2 <= end2)
+            reg[k++] = arr[start2++];
+        for (k = start; k <= end; k++)
+            arr[k] = reg[k];
+    }
+
+    void merge_sort(int arr[], const int len) {
+        int reg[len];
+        merge_sort_recursive(arr, reg, 0, len - 1);
+    }
+    ```
+- > **Python3**
+  ```py
+  def mergeSort(nums):
+      if len(nums) < 2:
+          return nums
+      mid = len(nums) // 2
+      left = mergeSort(nums[:mid])
+      right = mergeSort(nums[mid:])
+      result = []
+      while left and right:
+          if left[0] <= right[0]:
+              result.append(left.pop(0))
+          else:
+              result.append(right.pop(0))
+      if left:
+          result += left
+      if right:
+          result += right
+      return result
+  
+  if __name__ == "__main__":
+      nums = [1, 4, 2, 3.6, -1, 0, 25, -34, 8, 9, 1, 0]
+      print("original:", nums)
+      print("Sorted:", mergeSort(nums))
   ```
 
 ## 选择排序
