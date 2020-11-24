@@ -69,3 +69,19 @@ Before swap_generic_type for struct: node4->val is 4, node4->next is 0x165a030
 After swap_generic_type for struct: node3->val is 4, node3->next is 0x165a030                                                                    
 After swap_generic_type for struct: node4->val is 3, node4->next is 0x165a010
 *******************************************************************************/
+
+// 上面那段是用 https://www.onlinegdb.com/online_c_compiler 编译的，感觉应该是最常见的gcc吧，符合预期。
+// 但是接着换到 https://repl.it/languages/c 去编译执行，结构体部分的交换不符合预期。。。能看出来用的是clang，所以肯定是编译器的影响了。
+/*
+ clang-7 -pthread -lm -o main main.c
+ ./main
+Before swap_generic_type for int: a is 1, b is 2
+After swap_generic_type for int: a is 2, b is 1
+Before swap_generic_type for char: x is x, y is y
+After swap_generic_type for char: x is y, y is x
+Before swap_generic_type for struct: node3->val is 3, node3->next is 0x1e34670
+Before swap_generic_type for struct: node4->val is 4, node4->next is 0x1e34690
+After swap_generic_type for struct: node3->val is 2, node3->next is (nil)
+After swap_generic_type for struct: node4->val is 3, node4->next is 0x1e34670
+ 
+*/
