@@ -19,6 +19,24 @@ C语言常用宏的使用小结 https://juejin.im/post/6844903950429192200
 # Python2
 
 ```py
+# 官方bisect库主要是为了查找某个元素 x 如果要插入相应list的话的插入位置，但是其实不方便精准查找某个元素是否在list中。
+# 官方文档页面搞了一个包装，但是只有查找最左位置的。在LC454里也写了最右位置的，详情参考那个题的笔记吧。
+import bisect
+def binary_search_leftmost_equal(arr, x):
+    i = bisect.bisect_left(arr, x)
+    if i != len(arr) and arr[i] == x:
+        return i
+    else:
+        return -1
+def binary_search_rightmost_equal(arr, x):
+    i = bisect.bisect_right(arr, x)
+    if i < len(arr) + 1 and arr[i-1] == x:
+        return i-1
+    else:
+        return -1
+```
+
+```py
 # 倒序遍历数组 -- 分别以`range(length-1`、`range(-1`为关键词在仓库中搜索，能发现不少。比如`000066.py`、`000067_algo2.py`
 # `000415.py`（字符串相加）、`000043.py`（字符串相乘）里面也涉及了倒序循环遍历，不过是分两段。
 s = '123'
