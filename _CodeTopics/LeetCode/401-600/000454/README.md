@@ -14,3 +14,42 @@
 [-23,-20,-11,-10,-19,-26,-14,-9,-21,-24,-10,-13,3,-5,-26,8,5,-15,2,-26,-5,10,-16,-14,-5,5,-16,-12,6,-26,-16,2,-8,10,-29,-6,-14,-22,-4,-29,3,-1,9,0,-21,-1,-22,4,6,-32,-26,-18,-24,-19,-9,-5,-20,-20,4,1,9,-7,-26,-12,-9,6,-20,-19,-18,-29,-11,-8,-29,1,3,-1,-29,-19,-3,-24,-23,-6,10,9,6,-24,-25,4,-25,-14,-32,-32,-25,-4,4,-24,-24,7,-5,-1]
 [-24,-3,-26,9,-5,-3,-24,6,7,-9,8,-16,4,-14,-30,-9,4,-29,-24,-20,-6,-22,-20,7,5,-14,-9,0,5,-15,1,-12,2,3,7,3,-24,7,-18,-27,-19,5,-13,-14,1,-26,-6,8,-11,-27,-3,-27,-18,-4,8,4,-25,1,-15,-22,-6,4,10,1,-16,-10,-6,-5,-5,-23,-9,2,0,9,-14,-25,-20,-25,7,-31,-6,-18,-22,-19,-32,-16,-32,1,-22,-26,8,5,-28,3,-26,0,4,-7,-32,-27]
 ```
+
+# 语法点
+
+`000454_algo3.py`中参考了[官方bisect库文档页面](https://docs.python.org/zh-cn/2.7/library/bisect.html)实现的“**准确查找某元素是否在数组中的方法**”。同时官方的没有rightmost的情况，自己包装了一下。
+
+```py
+import bisect
+def binary_search_leftmost_equal(arr, x):
+    i = bisect.bisect_left(arr, x)
+    if i != len(arr) and arr[i] == x:
+        return i
+    else:
+        return -1
+def binary_search_rightmost_equal(arr, x):
+    i = bisect.bisect_right(arr, x)
+    if i < len(arr) + 1 and arr[i-1] == x:
+        return i-1
+    else:
+        return -1
+
+l = [1, 3, 4, 4, 4, 6, 7]
+print binary_search_leftmost_equal(l, 2)
+print binary_search_rightmost_equal(l, 8)
+print binary_search_leftmost_equal(l, 4)
+print binary_search_rightmost_equal(l, 4)
+print binary_search_leftmost_equal(l, 1)
+print binary_search_rightmost_equal(l, 1)
+print binary_search_leftmost_equal(l, 7)
+print binary_search_rightmost_equal(l, 7)
+--------------------------------------------------
+-1
+-1
+2
+4
+0
+0
+6
+6
+```
