@@ -10,6 +10,52 @@
   * > 但如果没找到，就需要 while 循环终止，然后返回 -1。那 while 循环什么时候应该终止？**搜索区间为空的时候应该终止**，意味着你没得找了，就等于没找到嘛。
 
 二分查找的 ”循环不变量“ ， 只要理解， 根本不用死记硬背边界条件 https://leetcode-cn.com/problems/binary-search/solution/er-fen-cha-zhao-de-xun-huan-bu-bian-liang-zhi-yao-/
+```cpp
+// 常规写法 1
+class Solution {
+public:
+    int search(vector<int>& nums, int target) {
+        if(nums.size() == 0)
+            return -1;
+        int l = 0, r = nums.size();
+        while(l < r){
+            int m = (l + r) / 2;
+            if(nums[m] == target)
+                return m;
+            else if(nums[m] > target)
+                r = m;
+            else
+                l = m + 1;
+        }
+        return -1;
+    }
+};
+```
+```cpp
+// 常规写法 2
+class Solution {
+public:
+    int search(vector<int>& nums, int target) {
+        if(nums.size() == 0)
+            return -1;
+        int l = 0, r = nums.size() - 1;
+        while(l <= r){
+            int m = (l + r) / 2;
+            if(nums[m] == target)
+                return m;
+            else if(nums[m] > target)
+                r = m - 1;
+            else
+                l = m + 1;
+        }
+        return -1;
+    }
+};
+```
+>> //notes: ![](./pic/1.binary_search_diff.png)
+>>> 醉了，上传完了发现原来原作者自己已经有标识清楚的对比图了。。。![](https://pic.leetcode-cn.com/8dfd46d9ba8374bae37d3583def5878bd7462698dc9d2311c159d110aecc7557-%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.png)
+- > 因为是 **左闭右开** 的循环结束条件的判断中为 `while(l < r)` 因为对于左闭右开的区间 `[2, 2)` 这种数值是无意义的， 所以当 `r = l` 的时候， 就该结束循环了， 所以只有在 `l < r` 才继续循环
+- > 因为是 **左闭右开** 的 r 的移动规则为 `r = m` ，因为当前循环查找的为索引为 m 位置的元素(即：（`nums[m] == target`）)， 下一次应该将查找范围的右边界设置为 m 位置的前一个元素（`[l, m - 1]`）， 因为 r 指向最后一个元素的后一个元素， 当 r = m ， 下次的查找范围就为 `[l, r)`即 `[l, m - 1]`
 
 再也不怕女朋友问我二分查找了！【手绘漫画】图解二分查找（修订版） https://leetcode-cn.com/problems/binary-search/solution/zai-ye-bu-pa-nu-peng-you-wen-wo-er-fen-cha-zhao-li/
 
