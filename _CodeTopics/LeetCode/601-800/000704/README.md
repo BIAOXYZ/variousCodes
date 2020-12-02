@@ -4,6 +4,14 @@
 
 【[:star:][`*`]】 二分查找细节详解，顺便赋诗一首 https://leetcode-cn.com/problems/binary-search/solution/er-fen-cha-zhao-xiang-jie-by-labuladong/
 >> //notes：这篇文章最好的地方是明确了`搜索区间`这个概念吧。
+```console
+# 个人笔记例子
+
+假定 nums = [0,1,2], target = 0. 首先考虑**左闭右闭**的情况：
+第一轮 mid = (0 + 2)/2 = 1，nums[mid] == 1 > target == 0，需要right左移到mid-1的位置，也就是right变为0。 // 此时因为while循环条件
+    是 <=，所以还会继续下一轮。但是要是while循环条件内用 <，对于 left = right = 0 这种情况就会直接返回，也就是会漏掉正确答案了。
+第二轮 mid = (0 + 0)/2 = 0, nums[mid] == 0 等于 target == 0，找到答案。
+```
 - > 本文就来探究几个最常用的二分查找场景：寻找一个数、寻找左侧边界、寻找右侧边界。而且，我们就是要深入细节，比如不等号是否应该带等号，mid 是否应该加一等等。分析这些细节的差异以及出现这些差异的原因，保证你能灵活准确地写出正确的二分查找算法。
 - > **零、二分查找框架**
   * > 另外声明一下，计算 mid 时需要防止溢出，代码中 `left + (right - left) / 2` 就和 `(left + right) / 2` 的结果相同，但是有效防止了 left 和 right 太大直接相加导致溢出。
