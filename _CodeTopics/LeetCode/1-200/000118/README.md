@@ -36,3 +36,34 @@ print ll
 [[1, 2, 3]]
 [[1, 2, 3]]
 ```
+
+后来在如下stackoverflow页面找到了答案：
+
+Different ways of clearing lists https://stackoverflow.com/questions/850795/different-ways-of-clearing-lists
+- https://stackoverflow.com/a/850831/10482486
+  * > Clearing a list in place will affect all other references of the same list.
+  * > For example, this method doesn't affect other references:
+    ```py
+    >>> a = [1, 2, 3]
+    >>> b = a
+    >>> a = []
+    >>> print(a)
+    []
+    >>> print(b)
+    [1, 2, 3]
+    ```
+  * > But this one does:
+    ```py
+    >>> a = [1, 2, 3]
+    >>> b = a
+    >>> del a[:]      # equivalent to   del a[0:len(a)]
+    >>> print(a)
+    []
+    >>> print(b)
+    []
+    >>> a is b
+    True
+    ```
+- > Why the first one will only affect a? I thought a and b reference to the same object... Just wanna know why. Thanks. 
+  >> because in first you are changing a reference for 'a' to point to new array, not clearing one, and b still points an old one
+  
