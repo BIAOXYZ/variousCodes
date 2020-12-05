@@ -39,7 +39,7 @@ print ln2.next.val
 ln3 = ListNode(444)
 print ln2.next.val
 
-# You cannot directly use "ln3.next" before application a ListNode for it.
+# You cannot directly use "ln3.next" before applying a ListNode for it.
 ln3.next.val = 555
 print ln2.next.val
 
@@ -62,3 +62,4 @@ Traceback (most recent call last):
     ln3.next.val = 555
 AttributeError: 'NoneType' object has no attribute 'val'
 ```
+>> 【[:star:][`*`]】 //notes：注：结合`LC118`的[`README`](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/1-200/000118/README.md)看更容易明白，在那里针对list类型做了更多的总结。
