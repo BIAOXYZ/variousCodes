@@ -64,6 +64,11 @@ Different ways of clearing lists https://stackoverflow.com/questions/850795/diff
     >>> a is b
     True
     ```
-- > Why the first one will only affect a? I thought a and b reference to the same object... Just wanna know why. Thanks. 
-  >> because in first you are changing a reference for 'a' to point to new array, not clearing one, and b still points an old one
-  
+  * > You could also do:
+    ```py
+    >>> a[:] = []
+    ```
+  * 然后是有人提问原因，我也是从回答里找到了答案。 
+  * > Why the first one will only affect a? I thought a and b reference to the same object... Just wanna know why. Thanks. 
+    >> because in first you are changing a reference for 'a' to point to new array, not clearing one, and b still points an old one
+    
