@@ -15,7 +15,7 @@
 
 ## `000118.py`
 
-第`22`行`res.append(newList)`，等提交了才发现：按理说为了保证不影响后面，这里更准确的不应该是`res.append(newList[:])`吗？然后试了一下，发现python的list一旦赋值成空list，应该就算“销毁”然后重新申请了吧？
+第`22`行`res.append(newList)`，等提交了才发现：按理说为了保证不影响后面，这里更准确的不应该是`res.append(newList[:])`吗？然后试了一下，发现python的list一旦赋值成空list，应该就算“销毁”然后重新申请了吧？(TODO --> Finished)
 
 ```py
 l = [1,2]
@@ -71,4 +71,29 @@ Different ways of clearing lists https://stackoverflow.com/questions/850795/diff
   * 然后是有人提问原因，我也是从回答里找到了答案。 
   * > Why the first one will only affect a? I thought a and b reference to the same object... Just wanna know why. Thanks. 
     >> because in first you are changing a reference for 'a' to point to new array, not clearing one, and b still points an old one
-    
+  * 评论里还有人提到了python3.3以后可以用`clear()`方法：
+  * > With python 3.3 and later you can go with `a.clear()`, no problem! 
+
+>> //notes：于是实验一下上面两个：
+```py
+a = [1, 2, 3]
+b = a
+a[:] = []
+print(a)
+print(b)
+--------------------------------------------------
+[]
+[]
+```
+```py3
+# 注意这个是在python3下进行的。
+
+a = [1, 2, 3]
+b = a
+a.clear()
+print(a)
+print(b)
+--------------------------------------------------
+[]
+[]
+```
