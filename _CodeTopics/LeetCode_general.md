@@ -184,6 +184,7 @@
 - 【python `list`的`reverse()`方法】 || `344. 反转字符串`
 - 【python `set`的`intersection()`方法】 || `349. 两个数组的交集`
 - 【C++ `<algorithm>` header下的`next_permutation`函数】 || `31. 下一个排列`
+- 【python `math`库的`math.factorial()`或者`math.comb()`，后者只有python3的`math`库才有。】
 
 ## 近似手动狗头题
 - `557. 反转字符串中的单词 III`
