@@ -5,7 +5,8 @@
 
 为什么某些测试用例下，执行代码返回结果正确，但提交解答却出错了 https://support.leetcode-cn.com/hc/kb/article/1194344/
 
-各语言对映版本和环境 https://support.leetcode-cn.com/hc/kb/article/1194343/ 【我真不想吐槽，但是这官方的错别字也。。。】
+各语言对映版本和环境 https://support.leetcode-cn.com/hc/kb/article/1194343/ 【我真不想吐槽，但是这官方的错别字也。。。】-->【后来官方发现了，因为从更改记录里可以看出来：`力扣 • 发表于：2018年10月26日 早上 00:30:16 • 更新于：2020年10月26日 早上 10:50:47`】
+- > 您可以使用 [uthash](https://troydhanson.github.io/uthash/) 来操作哈希表。`"uthash.h"` 已经被默认包含了。
 
 从哪里可以查看到我的所有提交记录 https://support.leetcode-cn.com/hc/kb/article/1194342/
 
