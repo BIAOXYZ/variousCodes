@@ -1,8 +1,10 @@
 
 `48. 旋转图像` https://leetcode-cn.com/problems/rotate-image/solution/xuan-zhuan-tu-xiang-by-leetcode-solution-vu3m/
 - [x] 方法一：使用辅助数组
-- 方法二：原地旋转
+- [x] 方法二：原地旋转
 - 方法三：用翻转代替旋转
+
+Python3 一行 https://leetcode-cn.com/problems/rotate-image/solution/python3-yi-xing-by-ji-zhi-hao-sama-2zcx/
 
 # 测试用例
 
