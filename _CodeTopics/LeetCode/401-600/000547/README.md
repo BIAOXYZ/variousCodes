@@ -1,0 +1,13 @@
+
+`547. 省份数量` https://leetcode-cn.com/problems/number-of-provinces/solution/sheng-fen-shu-liang-by-leetcode-solution-eyk0/
+- 方法一：深度优先搜索
+- 方法二：广度优先搜索
+- 方法三：并查集
+
+# 测试用例
+
+```
+[[1,1,0],[1,1,0],[0,0,1]]
+[[1,0,0],[0,1,0],[0,0,1]]
+[[1,0,0,1],[0,1,1,0],[0,1,1,1],[1,0,1,1]]
+```
