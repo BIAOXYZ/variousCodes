@@ -224,3 +224,11 @@
 111、257
 
 :u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 刷题语法综合类链接
+
+`cheatsheet/Python/Cpp` https://programming-idioms.org/cheatsheet/Python/Cpp
+
+【pat】C++之刷题常用STL容器整理 https://www.cnblogs.com/ericling/p/11921641.html
+
+再也不用c刷题了!!——c++刷题必备 https://www.cnblogs.com/wfybeliefs/p/12819621.html

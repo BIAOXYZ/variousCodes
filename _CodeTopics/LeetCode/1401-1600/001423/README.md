@@ -18,3 +18,13 @@
 [9,7,7,9,7,7,9]
 5
 ```
+
+# 语法点
+
+C++ `<numeric>` 里的 `accumulate()` 函数，刷题时用来替代python的内置函数 `sum()`。但是注意这个函数的参数至少要多一个，必须有一个初始值。`001423.cpp`里的两处用法分别是：
+```cpp
+int total = accumulate(cardPoints.begin(), cardPoints.end(), 0);
+```
+```cpp
+int currSum = accumulate(cardPoints.begin(), cardPoints.begin() + n, 0);
+```
