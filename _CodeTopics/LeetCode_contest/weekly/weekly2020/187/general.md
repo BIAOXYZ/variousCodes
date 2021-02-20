@@ -44,3 +44,7 @@ for j in range(i+1,length):
 如何在Python中使用break跳出多层循环？ - 知乎-李俊达的回答 - 知乎 https://www.zhihu.com/question/37076998/answer/144446959
 > 利用全局变量，这样就算3个for或者4个for都是一样的
 >> ![](https://pic3.zhimg.com/80/v2-216988ede7643b5ed670e590b3172cee_1440w.jpg)
+
+### 2021.02.21补
+
+该题在LeetCode常规题目中对应的题号是[`1483`](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)，后来更是作为`2021.02.21`的每日一题出现。
