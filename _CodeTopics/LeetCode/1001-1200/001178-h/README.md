@@ -19,16 +19,39 @@ puzzle = 'bcde'
 mask = 0
 for i in range(1, 4):
     mask |= (1 << (ord(puzzle[i]) - ord("a")))
-print mask
-  
+    print "mask =", mask
+print "final mask is:", mask
+print "\n"
+
 subset = mask
 res = []
 while subset:
     s = subset | (1 << (ord(puzzle[0]) - ord("a")))
     res.append(s)
+    print res
     subset = (subset - 1) & mask
-print res
+    print subset
+print "final res is:", res
 --------------------------------------------------
-28
+mask = 4
+mask = 12
+mask = 28
+final mask is: 28
+
+
+[30]
+24
+[30, 26]
+20
+[30, 26, 22]
+16
+[30, 26, 22, 18]
+12
+[30, 26, 22, 18, 14]
+8
+[30, 26, 22, 18, 14, 10]
+4
 [30, 26, 22, 18, 14, 10, 6]
+0
+final res is: [30, 26, 22, 18, 14, 10, 6]
 ```
