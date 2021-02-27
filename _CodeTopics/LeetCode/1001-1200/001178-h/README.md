@@ -3,6 +3,30 @@
 - [x] 方法一：二进制状态压缩
 - [ ] 方法二：字典树
 
+【详尽注释】详解「朴素位运算」& 「哈希表位运算」，以完整的优化分析思路 ... https://leetcode-cn.com/problems/number-of-valid-words-for-each-puzzle/solution/xiang-jin-zhu-shi-xiang-jie-po-su-wei-yu-3cr2/
+- > **位运算说明**
+  * > `a >> b & 1` 代表检查 a 的第 b 位是否为 1，有两种可能性 0 或者 1
+  * > `a += 1 << b` 代表将 a 的第 b 位设置为 1 (当第 b 位为 0 的时候适用)
+  * > 如不想写对第 b 位为 0 的前置判断，`a += 1 << b` 也可以改成 `a |= 1 << b`
+  * > PS. 1 的二进制就是最低位为 1，其他位为 0 哦
+  * > 以上两个操作在位运算中出现频率超高，建议每位同学都加深理解。
+
+「手画图解」巧用位运算，思路解析 | leetcode 1178 猜字谜 https://leetcode-cn.com/problems/number-of-valid-words-for-each-puzzle/solution/shou-hua-tu-jie-si-lu-jie-xi-leetcode-11-12dy/
+- 评论：
+  * > 学到了
+    ```console
+    a = mask = "eca" = 10101
+
+    |  a - 1  |  a = (a - 1) & mask  |
+    |  10100  |  10100  = "ec"       |
+    |  10011  |  10001  = "ea"       |
+    |  10000  |  10000  = "e"        |
+    |  01111  |  00101  = "ca"       |
+    |  00100  |  00100  = "c"        |
+    |  00011  |  00001  = "a"        |
+    |  00000  |  end                 |
+    ```
+
 # 测试用例
 
 ```
