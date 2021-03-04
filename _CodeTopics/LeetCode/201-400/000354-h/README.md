@@ -1,7 +1,7 @@
 
 `354. 俄罗斯套娃信封问题` https://leetcode-cn.com/problems/russian-doll-envelopes/solution/e-luo-si-tao-wa-xin-feng-wen-ti-by-leetc-wj68/
 - [x] 方法一：动态规划
-- 方法二：基于二分查找的动态规划
+- [x] 方法二：基于二分查找的动态规划
 
 # 测试用例
 
