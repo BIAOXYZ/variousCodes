@@ -26,3 +26,5 @@
 
 - 最长上升子序列/动态规划/二分查找 https://leetcode-cn.com/problems/longest-increasing-subsequence/solution/zui-chang-shang-sheng-zi-xu-lie-dong-tai-gui-hua-e/
 - 动态规划 （包含O (N log N) 解法的状态定义以及解释） https://leetcode-cn.com/problems/longest-increasing-subsequence/solution/dong-tai-gui-hua-er-fen-cha-zhao-tan-xin-suan-fa-p/
+
+此外，其实我这里写的只是trivial的二分，而不是***查找最左边界***的二分。但是因为这题的特殊性，那名为`d`的List里不会有重复元素，所以用plain的二分也是可以的。但是两者的区别还是要清楚，详情参见`LC34. 在排序数组中查找元素的第一个和最后一个位置`。
