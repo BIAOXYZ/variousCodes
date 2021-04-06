@@ -207,6 +207,7 @@
 - 【python `math`库的`math.factorial()`或者`math.comb()`，后者只有python3的`math`库才有。】
 - 【python的List切片语法`row[::1]`】 || `832. 翻转图像`
 - 【python内置函数`zip()`】 || `867. 转置矩阵`
+- `81. 搜索旋转排序数组 II`
 
 ## 近似手动狗头题
 - `557. 反转字符串中的单词 III`
