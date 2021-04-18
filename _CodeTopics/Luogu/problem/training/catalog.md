@@ -37,3 +37,6 @@ https://keepthethink.github.io/archives/2538557693/
 # 题单 https://www.luogu.com.cn/training/list
 
 多项式全家桶 https://www.luogu.com.cn/training/3015
+
+背包问题 https://www.luogu.com.cn/training/5197
+- `洛谷日报 #61 背包问题` https://www.luogu.com.cn/blog/RPdreamer/bei-bao-wen-ti
