@@ -175,3 +175,17 @@ Python语法糖——遍历列表时删除元素 https://segmentfault.com/a/1190
   ```
 
 Python如何一边遍历列表一边删除数据 https://www.jianshu.com/p/1547fdf962e4
+
+# 后补：测试用例及题目链接
+
+```
+[1,1,2]
+[0,0,1,1,1,2,2,3,3,4]
+[]
+[9]
+[8,9]
+[9,9]
+[9,9,9]
+```
+
+`26. 删除有序数组中的重复项` https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
