@@ -1,7 +1,7 @@
 
 `160. 相交链表` https://leetcode-cn.com/problems/intersection-of-two-linked-lists/solution/xiang-jiao-lian-biao-by-leetcode-solutio-a8jn/
-- [ ] 方法一：哈希集合
-- [ ] 方法二：双指针
+- [x] 方法一：哈希集合
+- [x] 方法二：双指针
 
 # 测试用例
 
