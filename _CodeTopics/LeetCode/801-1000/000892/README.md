@@ -1,6 +1,6 @@
 
 `892. 三维形体的表面积` https://leetcode-cn.com/problems/surface-area-of-3d-shapes/solution/san-wei-xing-ti-de-biao-mian-ji-by-leetcode-soluti/
-- 方法一：分步累加
+- [x] 方法一：分步累加
 
 # 测试用例
 
