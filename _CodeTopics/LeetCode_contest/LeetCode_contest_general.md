@@ -18,3 +18,8 @@
 可能是己亥年最有趣的比赛 https://leetcode-cn.com/contest/sf-2020/
 - 100265. qqqqqqqqqqqqqqqy 的热身题 https://leetcode-cn.com/contest/sf-2020/problems/qqqqqqqqqqqqqqqys-warm-up-question/
   * > 在这道题你需要返回一个字符串，这个字符串就是你提交的代码本身。
+
+>> 后来发现比赛链接和题目链接都没了，坑！于是从别的地方有些信息，记录一下：
+
+- 【补题】可能是己亥年最有趣的比赛 - 丰富的计算机知识.jpg https://www.bilibili.com/video/av84396681/
+- leetcode 可能是己亥年最有趣的比赛 https://segmentfault.com/a/1190000021616659
