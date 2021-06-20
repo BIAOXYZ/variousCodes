@@ -9,6 +9,12 @@
 
 # 其他
 
+## 中国时间：2021-06-19 15:00
+
+「微爱思扣 以 Code 会友」专场竞赛 https://leetcode-cn.com/contest/lc-vscode/
+
+##
+
 可能是己亥年最有趣的比赛 https://leetcode-cn.com/contest/sf-2020/
 - 100265. qqqqqqqqqqqqqqqy 的热身题 https://leetcode-cn.com/contest/sf-2020/problems/qqqqqqqqqqqqqqqys-warm-up-question/
   * > 在这道题你需要返回一个字符串，这个字符串就是你提交的代码本身。
