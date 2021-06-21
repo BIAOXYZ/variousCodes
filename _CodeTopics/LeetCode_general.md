@@ -203,7 +203,7 @@
 - `43. 字符串相乘` || `415. 字符串相加` || `50. Pow(x, n)` || `28. 实现 strStr()`
 - 【python `list`的`reverse()`方法】 || `344. 反转字符串`
 - 【python `set`的`intersection()`方法】 || `349. 两个数组的交集`
-- 【C++ `<algorithm>` header下的`next_permutation`函数】 || `31. 下一个排列`
+- 【C++ `<algorithm>` header下的 `next_permutation` 函数】 || `31. 下一个排列` |||| 【Python的 `itertools.permutations()` 函数】 || `剑指 Offer 38. 字符串的排列`
 - 【python `math`库的`math.factorial()`或者`math.comb()`，后者只有python3的`math`库才有。】
 - 【python的List切片语法`row[::1]`】 || `832. 翻转图像`
 - 【python内置函数`zip()`】 || `867. 转置矩阵`
