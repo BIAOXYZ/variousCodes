@@ -3,6 +3,8 @@
 - [x] 方法一：广度优先搜索
 - [ ] 方法二：启发式搜索
 
+[Python]双向BFS 98% 结构清晰 一些trick https://leetcode-cn.com/problems/open-the-lock/solution/shuang-xiang-bfs-python-98-jie-gou-qing-s8d5v/
+
 # 测试用例
 
 ```
