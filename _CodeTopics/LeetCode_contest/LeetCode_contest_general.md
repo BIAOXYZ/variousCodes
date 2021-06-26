@@ -9,6 +9,9 @@
 
 # 其他
 
+lucifer1004的CP笔记 https://github.com/lucifer1004/cp-wiki
+- 关于Leetcode https://cp-wiki.vercel.app/tutorial/leetcode/
+
 ## 中国时间：2021-06-19 15:00
 
 「微爱思扣 以 Code 会友」专场竞赛 https://leetcode-cn.com/contest/lc-vscode/
