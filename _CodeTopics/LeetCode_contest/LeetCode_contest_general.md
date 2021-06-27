@@ -9,8 +9,16 @@
 
 # 其他
 
+## 官方
+
+🏆 力扣竞赛 - 勋章及成就规则 https://leetcode-cn.com/circle/discuss/0fKGDu/ || 2020 年 10 月功能更新 https://support.leetcode-cn.com/hc/kb/article/1427007/
+
+## 非官方
+
 lucifer1004的CP笔记 https://github.com/lucifer1004/cp-wiki
 - 关于Leetcode https://cp-wiki.vercel.app/tutorial/leetcode/
+
+# 特殊比赛
 
 ## 中国时间：2021-06-19 15:00
 
