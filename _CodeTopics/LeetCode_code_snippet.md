@@ -19,6 +19,31 @@ C语言常用宏的使用小结 https://juejin.im/post/6844903950429192200
 # Python2
 
 ```py
+# 列表变频率字典（其实比赛的时候都是直接用 Counter）
+def list_to_dict(lis):
+    dic = {}
+    for num in lis:
+        if dic.has_key(num):
+            dic[num] += 1
+        else:
+            dic[num] = 1
+    return dic
+def list_to_dic(lis):
+    dic = {}
+    for elem in lis:
+        if elem in dic:
+            dic[elem] += 1
+        else:
+            dic[elem] = 1
+    return dic
+def list_to_dic_v2(lis):
+    dic = {}
+    for elem in lis:
+        dic[elem] = dic.setdefault(elem, 0) + 1
+    return dic
+```
+
+```py
 # 官方bisect库主要是为了查找某个元素 x 如果要插入相应list的话的插入位置，但是其实不方便精准查找某个元素是否在list中。
 # 官方文档页面搞了一个包装，但是只有查找最左位置的。在LC454里也写了最右位置的，详情参考那个题的笔记吧。
 import bisect
