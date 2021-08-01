@@ -7,6 +7,8 @@
 - 5187. 收集足够苹果的最小花园周长 https://leetcode-cn.com/contest/weekly-contest-252/problems/minimum-garden-perimeter-to-collect-enough-apples/
 - 5833. 统计特殊子序列的数目 https://leetcode-cn.com/contest/weekly-contest-252/problems/count-number-of-special-subsequences/
 
+🏆 第 252 场力扣周赛 https://leetcode-cn.com/circle/discuss/pAXboA/
+
 # 其他
 
 麻蛋！极其不顺的一场周赛：
