@@ -3,6 +3,15 @@
 - [ ] 方法一：深度优先搜索 + 三色标记法
 - [ ] 方法二：拓扑排序
 
+【GTAlgorithm】5分钟干掉拓扑排序 https://leetcode-cn.com/problems/find-eventual-safe-states/solution/gtalgorithm-san-ju-hua-jiao-ni-wan-zhuan-xf5o/
+- > 如果你仍然想更多地了解拓扑排序，可以阅读我们写的[拓扑排序专题](https://mp.weixin.qq.com/s/24wIzDXN_NQuK1ICRmEtbw)。在这之后，你可能会想拿下面几道题练练手：
+  ```console
+  LeetCode 207.课程表 (中等)
+  LeetCode 210.课程表II (中等)
+  LeetCode 329.矩阵中的最长递增路径 (困难)
+  LeetCode 1203.项目管理 （困难）
+  ```
+
 # 测试用例
 
 ```
