@@ -54,3 +54,6 @@ Result table:
 对于 ID 为 3 的玩家，2018-07-03 共玩了 0+5=5 个游戏。
 请注意，对于每个玩家，我们只关心玩家的登录日期。
 ```
+
+超详细图解 自联结 https://leetcode-cn.com/problems/game-play-analysis-iii/solution/chao-xiang-xi-tu-jie-zi-lian-jie-by-piajun/
+- > ![](https://pic.leetcode-cn.com/1dc052bc10c3e9921cac53fd140e7a5b15b5ef39b90a819a718289b3725c7839-QQ%E5%9B%BE%E7%89%8720200613153615.png)
