@@ -184,3 +184,12 @@ def bisect_left(a, x, lo=0, hi=None):
         else: hi = mid
     return lo
 ```
+
+# 测试用例
+
+```
+[-1,0,3,5,9,12]
+9
+[-1,0,3,5,9,12]
+2
+```
