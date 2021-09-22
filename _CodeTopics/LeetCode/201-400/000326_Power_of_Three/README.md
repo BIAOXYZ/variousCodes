@@ -1,7 +1,7 @@
 
 `326. 3的幂` https://leetcode-cn.com/problems/power-of-three/solution/3de-mi-by-leetcode-solution-hnap/
 - [x] 方法一：试除法
-- [ ] 方法二：判断是否为最大 33 的幂的约数
+- [ ] 方法二：判断是否为最大 3 的幂的约数
 
 # 测试用例
 
