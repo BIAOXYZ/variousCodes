@@ -271,3 +271,9 @@
 【pat】C++之刷题常用STL容器整理 https://www.cnblogs.com/ericling/p/11921641.html
 
 再也不用c刷题了!!——c++刷题必备 https://www.cnblogs.com/wfybeliefs/p/12819621.html
+
+:u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272::u5272:
+
+# 其他文章
+
+OJ术语: AC、WA、TLE、OLE、MLE、RE、PE、CE https://blog.csdn.net/JNingWei/article/details/78425824
