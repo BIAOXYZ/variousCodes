@@ -16,6 +16,8 @@ class Solution(object):
                 return k
             
 """
+https://leetcode-cn.com/submissions/detail/67765940/
+
 103 / 103 个通过测试用例
 	状态：通过
 执行用时：24 ms
