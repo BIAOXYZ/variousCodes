@@ -14,3 +14,34 @@
 # (2)
 
 这个题真是屁意思没有，CRUD都搞到LeetCode来了，比第一题都不如。
+
+# (3)
+
+除了那次故意的提交留底，后面又写的剩余代码。TODO。
+
+```py
+class Solution(object):
+    def countMaxOrSubsets(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        
+        maxVal = reduce(lambda x, y: x | y, nums)
+        
+        lis = [0]
+        length = len(nums)
+        def backtrack(pos, currArr, currVal):
+            ##print pos, currArr, currVal
+            if pos == length:
+                if currVal == maxVal:
+                    lis[0] += 1
+                return
+            for i in range(pos, length):
+                currArr.append(nums[pos])
+                backtrack(i+1, currArr, currVal | nums[pos])
+                currArr.pop()
+        
+        backtrack(0, [], 0)
+        return lis[0]
+```
