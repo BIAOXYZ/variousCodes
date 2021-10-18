@@ -6,6 +6,8 @@
 
 Trie Tree 的实现 (适合初学者)🌳 https://leetcode-cn.com/problems/implement-trie-prefix-tree/solution/trie-tree-de-shi-xian-gua-he-chu-xue-zhe-by-huwt/
 
+Trie树(字典树或者前缀树)算法详解 https://leetcode-cn.com/circle/article/mv8GnX/
+
 # 测试用例
 
 ```
