@@ -1,0 +1,32 @@
+class Solution(object):
+    def trap(self, height):
+        """
+        :type height: List[int]
+        :rtype: int
+        """
+
+        # 动态规划法，其实就是暴力解法稍微变形：上来把所有位置的leftMax和rightMax都预计算出来，
+        # 存到相关数组里，后面循环的时候直接用，不再重复计算。
+
+        length = len(height)
+        dpLeftMax = [height[0]] + [-1 for _ in range(length-1)]
+        dpRightMax = [-1 for _ in range(length-1)] + [height[-1]]
+
+        for i in range(1, length):
+            dpLeftMax[i] = max(dpLeftMax[i-1], height[i])
+        for j in range(length-2, -1, -1):
+            dpRightMax[j] = max(dpRightMax[j+1], height[j])
+
+        # 我觉得这里去掉中括号应该空间复杂度会降低很多，试一下。
+        ## res = sum([min(dpLeftMax[i], dpRightMax[i]) - height[i] for i in range(1, length-1)])
+        res = sum(min(dpLeftMax[i], dpRightMax[i]) - height[i] for i in range(1, length-1))
+        return res
+        
+"""
+https://leetcode-cn.com/submissions/detail/234902370/
+
+执行用时：28 ms, 在所有 Python 提交中击败了58.95%的用户
+内存消耗：14 MB, 在所有 Python 提交中击败了38.03%的用户
+通过测试用例：
+320 / 320
+"""
