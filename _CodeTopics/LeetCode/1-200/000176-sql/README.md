@@ -3,6 +3,8 @@
 - [x] 方法一：使用子查询和 `LIMIT` 子句
 - [x] 方法二：使用 `IFNULL` 和 `LIMIT` 子句
 
+图解SQL面试题：如何查找第N高的数据？ https://leetcode-cn.com/problems/second-highest-salary/solution/tu-jie-sqlmian-shi-ti-ru-he-cha-zhao-di-ngao-de-sh/
+
 # 测试用例
 
 ```

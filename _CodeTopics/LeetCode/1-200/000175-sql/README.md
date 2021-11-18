@@ -2,6 +2,12 @@
 `175. 组合两个表` https://leetcode-cn.com/problems/combine-two-tables/solution/zu-he-liang-ge-biao-by-leetcode/
 - [x] 方法：使用 outer join
 
+图解SQL面试题：多表如何查询？ https://leetcode-cn.com/problems/combine-two-tables/solution/tu-jie-sqlmian-shi-ti-duo-biao-ru-he-cha-xun-by-ho/
+- > 考察多表联结，以及如何选择联结的类型。记住课程里讲过的下面这张图，遇到多表联结的时候从这张图选择对于的sql。
+- > ![](https://pic.leetcode-cn.com/ad3df1c4ecc7d2dbe85f92cdde8ec9a731fdd20dc4c5629ecb372b21de26c682-1.jpg)
+
+# 题目
+
 `175. 组合两个表` https://leetcode-cn.com/problems/combine-two-tables/
 ```console
 SQL架构:
