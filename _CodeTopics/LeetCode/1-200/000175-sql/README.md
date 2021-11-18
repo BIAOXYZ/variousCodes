@@ -5,6 +5,8 @@
 图解SQL面试题：多表如何查询？ https://leetcode-cn.com/problems/combine-two-tables/solution/tu-jie-sqlmian-shi-ti-duo-biao-ru-he-cha-xun-by-ho/
 - > 考察多表联结，以及如何选择联结的类型。记住课程里讲过的下面这张图，遇到多表联结的时候从这张图选择对于的sql。
 - > ![](https://pic.leetcode-cn.com/ad3df1c4ecc7d2dbe85f92cdde8ec9a731fdd20dc4c5629ecb372b21de26c682-1.jpg)
+- 回复里的：
+  * > 图片最下面两个对应的SQL： （左）select ... from 表1 as a FULL OUTER JOIN 表2 as b on a.列名=b.列名 （右）select ... from 表1 as a FULL OUTER JOIN 表2 as b on a.列名=b.列名 where a.列名 is null or b.列名 is null
 
 # 题目
 
