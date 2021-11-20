@@ -41,6 +41,11 @@ def list_to_dic_v2(lis):
     for elem in lis:
         dic[elem] = dic.setdefault(elem, 0) + 1
     return dic
+def list_to_dic_v3(lis):
+    dic = {}
+    for elem in lis:
+        dic[elem] = dic.get(elem, 0) + 1
+    return dic
 ```
 
 ```py
