@@ -10,3 +10,7 @@
 "aa"
 "aab"
 ```
+
+# 语法点
+
+才知道原来 `collections.Counter` 对象可以直接相减。
