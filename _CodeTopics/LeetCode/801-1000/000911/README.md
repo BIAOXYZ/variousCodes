@@ -16,3 +16,17 @@
 更详细的举例说明：令 `l = [0,5,10,15,20,25,30]` 为待搜索列表。根据题意，当搜索 `3` 时，希望返回 `ind = 0`；当搜索 `5` 时，希望返回 `ind = 1`。
 - 如果用 `bisect.bisect_left()`，不论搜索 `3` 还是 `5`，总是返回 `ind = 1`，没法处理了。
 - 但是如果用 `bisect.bisect_right()`，当搜索 `3` 时，返回 `ind = 1`；当搜索 `5` 时，返回 `ind = 2`。只要统一用 `ind - 1` 即可。
+```py
+>>> import bisect
+>>> l = [0,5,10,15,20,25,30]
+>>> bisect.bisect_left(l,3)
+1
+>>> bisect.bisect_left(l,5)
+1
+>>> 
+>>> bisect.bisect(l,3)
+1
+>>> bisect.bisect(l,5)
+2
+>>> 
+```
