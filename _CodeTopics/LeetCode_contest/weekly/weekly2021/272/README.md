@@ -41,3 +41,9 @@ class Solution(object):
             ans.append(k)
         return "".join(ans)
 ```
+
+# 其他
+
+这次排名第一的 4分51秒 就全部写完了：
+- https://leetcode-cn.com/circle/discuss/s1k590/view/gOoGdI/
+  * > 四分钟也太离谱了，傲视群雄
