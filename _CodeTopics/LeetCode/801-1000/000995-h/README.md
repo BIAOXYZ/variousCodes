@@ -18,3 +18,9 @@
 [0,0,0,1,0,1,1,0]
 3
 ```
+
+# 差分数组相关
+
+前缀和 & 差分 https://oi-wiki.org/basic/prefix-sum/
+
+小而美的算法技巧：差分数组 https://labuladong.gitee.io/algo/2/21/54/
