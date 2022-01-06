@@ -1,6 +1,10 @@
 
 `913. 猫和老鼠` https://leetcode-cn.com/problems/cat-and-mouse/solution/mao-he-lao-shu-by-leetcode-solution-444x/
 - [x] 方法一：动态规划
+  * > **结语**
+    + > 上述方法为自顶向下的动态规划，也称记忆化搜索。这道题也可以使用自底向上的方法求解，从必胜状态与必败状态开始计算初始状态对应的游戏结果，可以通过广度优先搜索或者拓扑排序实现。感兴趣的读者可以自行尝试。
+
+【代码界的小白】3种方法？揭秘猫鼠大战谁赢了！ https://leetcode-cn.com/problems/cat-and-mouse/solution/dai-ma-jie-de-xiao-bai-3chong-fang-fa-ji-ldjw/
 
 ```
 [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]
