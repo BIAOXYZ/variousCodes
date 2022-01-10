@@ -1,4 +1,7 @@
 
+`1036. 逃离大迷宫` https://leetcode-cn.com/problems/escape-a-large-maze/solution/tao-chi-da-mi-gong-by-leetcode-solution-qxhz/
+- [ ] 方法一：有限步数的广度优先搜索
+- [ ] 方法二：离散化 + 广度优先搜索
 
 ```
 [[0,1],[1,0]]
