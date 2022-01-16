@@ -6,3 +6,6 @@
 - 5194. 得到目标值的最少行动次数 https://leetcode-cn.com/contest/weekly-contest-276/problems/minimum-moves-to-reach-target-score/
 - 5982. 解决智力问题 https://leetcode-cn.com/contest/weekly-contest-276/problems/solving-questions-with-brainpower/
 - 5983. 同时运行 N 台电脑的最长时间 https://leetcode-cn.com/contest/weekly-contest-276/problems/maximum-running-time-of-n-computers/
+
+https://leetcode-cn.com/circle/discuss/iozPw7/view/uWThqh/
+- > Problem D - 同时运行 N 台电脑的最长时间
