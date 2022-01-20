@@ -18,6 +18,8 @@
 lucifer1004的CP笔记 https://github.com/lucifer1004/cp-wiki
 - 关于Leetcode https://cp-wiki.vercel.app/tutorial/leetcode/
 
+历次周赛题目场次及对应具体题目题号+链接汇总 https://leetcode-cn.com/circle/article/I9DWmo/
+
 # 特殊比赛
 
 ## 中国时间：2021-06-19 15:00
