@@ -16,6 +16,33 @@ C语言常用宏的使用小结 https://juejin.im/post/6844903950429192200
 #define MAX3(a,b,c)  ((a) > (b) ? ((a) > (c) ? (a) : (c)) : ((b) > (c) ? (b) : (c)))
 ```
 
+# C++
+
+```
+
+```
+
+# Python3
+
+```py
+# `LC1332. 删除回文子序列` 里还有等价的 C++ 和 C 版本。
+
+def is_palindrome(s):
+    left, right = 0, len(s)-1
+    while left < right:
+        if s[left] != s[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
+def is_palindrome_v2(s):
+    n = len(s)
+    for i in range(n//2):
+        if s[i] != s[n-1-i]:
+            return False
+    return True
+```
+
 # Python2
 
 ```py
