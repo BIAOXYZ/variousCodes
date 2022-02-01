@@ -178,6 +178,9 @@
 
 递归 https://leetcode-cn.com/tag/recursion/
 
+滑动窗口 https://leetcode-cn.com/tag/sliding-window/
+- `LC395. 至少有 K 个重复字符的最长子串`、`LC1763. 最长的美好子字符串`
+
 拓扑排序 https://leetcode-cn.com/tag/topological-sort/
 - `207. 课程表` 【[:bulb:][`*`]】  -->  实际上 `210. 课程表 II` 更具代表性。
 - `DUP-LC26 `
