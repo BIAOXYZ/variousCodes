@@ -123,6 +123,9 @@
 ## Ds tags
 
 并查集 https://leetcode-cn.com/tag/union-find/
+- 可以同时用DFS、BFS或并查集解决的题目：
+  * `LC547 省份数量`
+  * `LC1020 飞地的数量`
 
 树 https://leetcode-cn.com/tag/tree/
 - `DUP-LC104 二叉树的最大深度` 【放这里的肯定DFS和BFS都适用】
