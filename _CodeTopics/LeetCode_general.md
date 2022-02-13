@@ -164,6 +164,7 @@
 二分查找 https://leetcode-cn.com/tag/binary-search/
 - `LC704 二分查找` 【[:bulb:][`*`]】
 - `DUP-LC378 有序矩阵中第K小的元素` 【这里二分查找（官方答案第三个算法）右边界左移时用的是`right = mid`，而不是`right = mid - 1`】
+- `LC34 在排序数组中查找元素的第一个和最后一个位置` https://github.com/BIAOXYZ/variousCodes/blob/0f0589c9f72432dec44fd5777f65a016e42c5b5a/_CodeTopics/LeetCode/1-200/000034/000034_algo2_template.py
 - `LC35 搜索插入位置`
 
 排序 https://leetcode-cn.com/tag/sort/
