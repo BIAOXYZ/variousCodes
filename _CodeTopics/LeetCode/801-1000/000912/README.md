@@ -17,7 +17,9 @@ Python 实现的十大经典排序算法 https://leetcode-cn.com/problems/sort-a
 
 # 排序算法知识总结
 
->> //notes：冒泡排序每次把最大的元素排到其位置（最后）；选择排序每次把最小的元素排到其位置（最前）；快速排序每次把某个选定的元素排到其位置。
+>> 【[:star:][`*`]】 //notes：冒泡排序每次把最大的元素排到其位置（最后）；选择排序每次把最小的元素排到其位置（最前）；快速排序每次把某个选定的元素（可以随机选，也可以固定某个位置，比如最左边）排到其位置。
+
+1.0 十大经典排序算法 https://www.runoob.com/w3cnote/ten-sorting-algorithm.html
 
 排序算法 https://zh.wikipedia.org/wiki/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95 || Sorting algorithm https://en.wikipedia.org/wiki/Sorting_algorithm
 - **稳定的排序**：
