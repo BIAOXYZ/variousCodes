@@ -1,7 +1,30 @@
 
 `2104. 子数组范围和` https://leetcode-cn.com/problems/sum-of-subarray-ranges/solution/zi-shu-zu-fan-wei-he-by-leetcode-solutio-lamr/
 - [x] 方法一：遍历子数组
-- [ ] 方法二：单调栈
+- [x] 方法二：单调栈
+
+【daydayUppp🎈】单调栈 , O(n) 做法 https://leetcode-cn.com/problems/sum-of-subarray-ranges/solution/daydayuppp-dan-diao-zhan-on-zuo-fa-by-da-pmmt/
+- > **方法二 单调栈 O(n) 做法**
+```console
+主要就是确定每一个数作为 最大 或 最小 的作用 区间范围
+
+以 : [2,1,2,-1,3] 为例 进行说明 :
+
+当 1 作为 最小值 的作用的 区间范围 为 : (-1,1] + [1,3)
+所以能够组成的 子数组的个数 为 : n = (1 - (-1)) * (3 - 1) = 4
+且为 : [2,1],[1],[1,2],[2,1,2]
+所以这个 1 作为 最小值 对答案的贡献就是 -1 * n * 1
+
+当 2 (位置 2 上的) 最为 最大值 的作用的 区间范围 为 : (0,2] + [2,4)
+所以能够组成的 子数组的个数 为 : n = (2 - 0) * (4 - 2) = 4
+且为 : [1,2],[2],[2,-1],[1,2,-1]
+所以这个 2 作为 最大值 对答案的贡献就是 +1 * n * 2
+
+该过程可以用 单调栈 模拟
+具体看代码实现即可 有任何疑问欢迎评论区指出 🍬
+```
+
+【彤哥来刷题啦】一题三解：暴力 & 单调栈 & 栈优化！ https://leetcode-cn.com/problems/sum-of-subarray-ranges/solution/tong-ge-lai-shua-ti-la-yi-ti-san-jie-bao-sfas/
 
 ```
 [1,2,3]
