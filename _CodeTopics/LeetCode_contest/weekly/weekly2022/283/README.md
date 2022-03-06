@@ -7,6 +7,8 @@
 - 6018. 根据描述创建二叉树 https://leetcode-cn.com/contest/weekly-contest-283/problems/create-binary-tree-from-descriptions/
 - 6019. 替换数组中的非互质数 https://leetcode-cn.com/contest/weekly-contest-283/problems/replace-non-coprime-numbers-in-array/
 
+最后一题当时时间不多了，脑子没转过来。。。看了大佬的答案（ https://leetcode-cn.com/circle/discuss/c8HUDh/view/eCf0rc/ ）才发现其实简直就是脑筋急转弯。。。又是离全做完很近的一次。。。
+
 # (2)
 
 ```
