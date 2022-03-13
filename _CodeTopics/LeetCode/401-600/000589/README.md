@@ -2,7 +2,7 @@
 `589. N 叉树的前序遍历` https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/solution/n-cha-shu-de-qian-xu-bian-li-by-leetcode-bg99/
 - [x] 方法一：递归
 - [ ] 方法二：迭代
-- [ ] 方法三：迭代优化
+- [x] 方法三：迭代优化
 
 ```
 [1,null,3,2,4,null,5,6]
