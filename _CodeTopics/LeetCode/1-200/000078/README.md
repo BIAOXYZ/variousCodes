@@ -1,7 +1,13 @@
 
 `78. 子集` https://leetcode-cn.com/problems/subsets/solution/zi-ji-by-leetcode-solution/
-- 方法一：迭代法实现子集枚举
-- 方法二：递归法实现子集枚举
+- [x] 方法一：迭代法实现子集枚举
+- [x] 方法二：递归法实现子集枚举
+
+```
+[1,2,3]
+[0]
+[1,2,3,4]
+```
 
 # 笔记
 
