@@ -25,6 +25,12 @@ C语言常用宏的使用小结 https://juejin.im/post/6844903950429192200
 # Python3
 
 ```py
+alphabeta = [chr(i) for i in range(ord('a'), ord('z')+1)]
+print(alphabeta)
+# ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+```
+
+```py
 # `LC1332. 删除回文子序列` 里还有等价的 C++ 和 C 版本。
 
 def is_palindrome(s):
