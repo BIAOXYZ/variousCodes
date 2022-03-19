@@ -173,6 +173,8 @@
 - `912. 排序数组` 【[:bulb:][`*`]】
 
 回溯算法 https://leetcode-cn.com/tag/backtracking/
+- `2044. 统计按位或能得到最大值的子集数目` 【[:bulb:][`*`]】
+- `78. 子集` 【[:bulb:][`*`]】
 
 位运算 https://leetcode-cn.com/tag/bit-manipulation/
 - `LC137. 只出现一次的数字 II` https://leetcode-cn.com/problems/single-number-ii/
