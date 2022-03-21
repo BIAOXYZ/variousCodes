@@ -20,3 +20,5 @@
 评测用例规模与约定
 　　1<=n<=100，0<=横坐标、纵坐标<=100。
 ```
+
+CCF201409-2 画图（100分） https://blog.csdn.net/tigerisland45/article/details/54773758
