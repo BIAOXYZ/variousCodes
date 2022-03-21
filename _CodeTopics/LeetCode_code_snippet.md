@@ -25,6 +25,29 @@ C语言常用宏的使用小结 https://juejin.im/post/6844903950429192200
 # Python3
 
 ```py
+# https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode/2001-2200/002038/002038.py3
+# 输入一个字符串 s 和字符 ch，输出 s 内所有的全部为 ch 的子串位置和长度。 s = "AAABABB", ch = 'A' 时，输出 {0: 3, 4: 1}
+def get_start_pos_and_len(s, ch):
+    dic = {}
+    state = [False, -1, -1]
+    for i in range(len(s)):
+        if s[i] == ch:
+            if not state[0]:
+                state = [True, i, 1]
+            else:
+                state[2] += 1
+        else:
+            if not state[0]:
+                continue
+            else:
+                dic[state[1]] = state[2]
+                state = [False, -1, -1]
+    if state[0]:
+        dic[state[1]] = state[2]
+    return dic
+```
+
+```py
 alphabeta = [chr(i) for i in range(ord('a'), ord('z')+1)]
 print(alphabeta)
 # ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
