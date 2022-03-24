@@ -20,3 +20,139 @@
 评测用例规模与约定
 　　1 ≤ n ≤ 1000，给出的数都是不超过1000的非负整数。
 ```
+
+# 原版
+>> 有编译错误
+
+```cpp
+#include<bits/stdc++.h>
+
+using namespace std;
+typedef pair<int, int> PAIR;
+
+bool com(const PAIR &a, const PAIR &b){
+    if(a.second > b.second){
+        return a.second > b.second;
+    }
+    else if(a.second == b.second){
+        return a.first < b.first;
+    }
+}
+
+void outint(int n){
+    cout << n << ' ';
+}
+
+int main(){
+    int n;
+    cin >> n;
+
+    vector<int> z;
+    for(int i=0; i<n; i++){
+        int z_i;
+        cin >> z_i;
+        z.emplace_back(z_i);
+    }
+
+    map<int,int> m;
+
+    for(int i=0; i<n; i++){
+        int key = z[i];
+        if(m[key]){
+            m[key]++;
+        }
+        else{
+            m[key] = 1;
+        }
+    }
+    vector<PAIR> vpair;
+
+    //把map的值赋给向量
+    for(map<int, int>::iterator it=m.begin();it!=m.end();it++)
+    {
+        vpair.push_back(make_pair(it->first, it->second));
+    }
+
+    //给向量排序
+    sort(vpair.begin(), vpair.end(), com);
+    //输出排好序的向量
+    for_each(vpair.begin(), vpair.end(), outint);
+    cout << endl;
+    return 0;
+}
+```
+
+# 修改后的版本
+
+```cpp
+#include<bits/stdc++.h>
+
+using namespace std;
+typedef pair<int, int> PAIR;
+
+// bool com(const PAIR &a, const PAIR &b){
+//     if(a.second > b.second){
+//         return a.second > b.second;
+//     }
+//     else if(a.second == b.second){
+//         return a.first < b.first;
+//     }
+// }
+
+bool com(const PAIR &a, const PAIR &b){
+    if(a.second != b.second){
+        return a.second > b.second;
+    }
+    else if(a.second == b.second){
+        return a.first < b.first;
+    }
+}
+
+void outint(int n){
+    cout << n << ' ';
+}
+
+int main(){
+    int n;
+    // cin >> n;
+
+    // vector<int> z;
+    // for(int i=0; i<n; i++){
+    //     int z_i;
+    //     cin >> z_i;
+    //     z.emplace_back(z_i);
+    // }
+
+    n = 12;
+    vector<int> z{5,2,3,3,1,3,4,2,5,2,3,5};
+
+    map<int,int> m;
+
+    for(int i=0; i<n; i++){
+        int key = z[i];
+        if(m[key]){
+            m[key]++;
+        }
+        else{
+            m[key] = 1;
+        }
+    }
+    vector<PAIR> vpair;
+
+    //把map的值赋给向量
+    for(map<int, int>::iterator it=m.begin();it!=m.end();it++)
+    {
+        vpair.push_back(make_pair(it->first, it->second));
+    }
+
+    //给向量排序
+    sort(vpair.begin(), vpair.end(), com);
+    //输出排好序的向量
+    // for_each(vpair.begin(), vpair.end(), outint);
+    for(int i = 0; i < vpair.size(); ++i) {
+        cout << "For pair " << i << ", the key is: " << vpair[i].first << "; the frequency is: " << vpair[i].second << endl;
+    }
+    cout << endl;
+    return 0;
+}
+```
