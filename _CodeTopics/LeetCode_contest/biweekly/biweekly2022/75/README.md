@@ -12,3 +12,19 @@
 - 6034. 数组的三角和 https://leetcode-cn.com/contest/biweekly-contest-75/problems/find-triangular-sum-of-an-array/
 - 6035. 选择建筑的方案数 https://leetcode-cn.com/contest/biweekly-contest-75/problems/number-of-ways-to-select-buildings/
 - 6036. 构造字符串的总得分和 https://leetcode-cn.com/contest/biweekly-contest-75/problems/sum-of-scores-of-built-strings/
+
+# 其他
+
+又一次出现5分钟内做完4题。。。
+
+# (4)
+
+这个第四题涉及的算法还挺多的：
+- 二分+哈希；扩展KMP https://leetcode-cn.com/circle/discuss/gkiO22/view/t7zyM7/
+- 后缀数组；Z-算法 https://leetcode-cn.com/circle/discuss/gkiO22/view/mI626f/
+  * 在这个答案里还发现了一个库。。。 `#include <atcoder/string>`。
+  * 但是看后来的回答说是 LeetCode 是不能直接用的： https://leetcode-cn.com/circle/discuss/gkiO22/view/upXqXP/
+
+其他：
+- Z 函数（扩展 KMP） https://oi-wiki.org/string/z-func/
+- AC(AtCoder) Library Document https://atcoder.github.io/ac-library/document_en/index.html
