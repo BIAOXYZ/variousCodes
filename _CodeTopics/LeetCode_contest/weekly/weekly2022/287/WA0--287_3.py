@@ -28,4 +28,19 @@ class Solution(object):
 
 """
 https://leetcode-cn.com/contest/weekly-contest-287/submissions/detail/293996172/
+https://leetcode-cn.com/submissions/detail/293996172/
+
+27 / 99 个通过测试用例
+状态：解答错误
+
+输入：
+[1,2,3,4,10]
+5
+输出：
+1
+预期：
+3
+"""
+"""
+(0)
 """
