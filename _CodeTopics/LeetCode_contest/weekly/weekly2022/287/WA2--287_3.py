@@ -8,8 +8,6 @@ class Solution(object):
         
         n = len(candies)
         candies.sort()
-        if k <= n:
-            return candies[n-k]
         
         res = 0
         small, big = 0, candies[-1]-1
@@ -25,22 +23,20 @@ class Solution(object):
                 small += 1
         return res
     
-
 """
-https://leetcode-cn.com/contest/weekly-contest-287/submissions/detail/293996172/
-https://leetcode-cn.com/submissions/detail/293996172/
+https://leetcode-cn.com/submissions/detail/293999205/
 
-27 / 99 个通过测试用例
+36 / 99 个通过测试用例
 状态：解答错误
 
 输入：
-[1,2,3,4,10]
-5
-输出：
-1
-预期：
+[9,10,1,2,10,9,9,10,2,2]
 3
+输出：
+9
+预期：
+10
 """
 """
-(0)
+(2)
 """
