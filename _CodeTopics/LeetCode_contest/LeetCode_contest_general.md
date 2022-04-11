@@ -22,6 +22,10 @@ lucifer1004的CP笔记 https://github.com/lucifer1004/cp-wiki
 
 # 特殊比赛
 
+## 中国时间：2022-04-10 17:00
+
+招商银行专场竞赛 https://leetcode-cn.com/contest/cmbchina-2022spring/
+
 ## 中国时间：2021-06-19 15:00
 
 「微爱思扣 以 Code 会友」专场竞赛 https://leetcode-cn.com/contest/lc-vscode/
