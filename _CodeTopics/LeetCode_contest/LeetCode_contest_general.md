@@ -20,6 +20,9 @@ lucifer1004的CP笔记 https://github.com/lucifer1004/cp-wiki
 
 历次周赛题目场次及对应具体题目题号+链接汇总 https://leetcode-cn.com/circle/article/I9DWmo/
 
+Leetcode Problem Rating Project https://github.com/zerotrac/leetcode_problem_rating
+- https://zerotrac.github.io/leetcode_problem_rating/
+
 # 特殊比赛
 
 ## 中国时间：2022-04-10 17:00
