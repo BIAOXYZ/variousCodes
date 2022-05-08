@@ -7,6 +7,10 @@
 - 6058. 统计打字方案数 https://leetcode-cn.com/contest/weekly-contest-292/problems/count-number-of-texts/
 - 6059. 检查是否有合法括号字符串路径 https://leetcode-cn.com/contest/weekly-contest-292/problems/check-if-there-is-a-valid-parentheses-string-path/
 
+# 题解
+
+https://leetcode-cn.com/circle/discuss/GL2IJv/view/hjOlWd/
+
 # (1)
 
 ```
