@@ -30,6 +30,14 @@
   * https://leetcode-cn.com/problems/reverse-linked-list/solution/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/178642
   * https://leetcode-cn.com/problems/reverse-linked-list/solution/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/222187
 
+```console
+[1,2,3,4,5]
+[]
+[1]
+[1,2]
+[1,2,3]
+```
+
 # `000206.py` 和 `000206_optm.py`
 
 首先附上官方答案的Java版本：
