@@ -164,7 +164,7 @@
 - `198. 打家劫舍`
 
 记忆化搜索 https://leetcode.cn/tag/memoization/problemset/
-- `464 我能赢吗` 【[:watch:][`*`]】【带状态压缩的记忆化搜索】
+- `464 我能赢吗` 【[:bulb:][`*`]】【带状态压缩的记忆化搜索】
 
 二分查找 https://leetcode-cn.com/tag/binary-search/
 - `LC704 二分查找` 【[:bulb:][`*`]】
