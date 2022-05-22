@@ -163,6 +163,9 @@
 - `746. 使用最小花费爬楼梯`
 - `198. 打家劫舍`
 
+记忆化搜索 https://leetcode.cn/tag/memoization/problemset/
+- `464 我能赢吗` 【[:watch:][`*`]】【带状态压缩的记忆化搜索】
+
 二分查找 https://leetcode-cn.com/tag/binary-search/
 - `LC704 二分查找` 【[:bulb:][`*`]】
 - `DUP-LC378 有序矩阵中第K小的元素` 【这里二分查找（官方答案第三个算法）右边界左移时用的是`right = mid`，而不是`right = mid - 1`】

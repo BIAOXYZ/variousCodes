@@ -1,6 +1,6 @@
 
 `464. 我能赢吗` https://leetcode.cn/problems/can-i-win/solution/wo-neng-ying-ma-by-leetcode-solution-ef5v/
-- [ ] 方法一：记忆化搜索 + 状态压缩
+- [x] 方法一：记忆化搜索 + 状态压缩
 
 ```
 10
