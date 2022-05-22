@@ -48,6 +48,7 @@ def get_start_pos_and_len(s, ch):
 ```
 
 ```py
+# 获取所有小写字母
 alphabeta = [chr(i) for i in range(ord('a'), ord('z')+1)]
 print(alphabeta)
 # ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -70,6 +71,20 @@ def is_palindrome_v2(s):
         if s[i] != s[n-1-i]:
             return False
     return True
+```
+
+```py
+# 前缀和
+# from：https://gist.github.com/WhiteRobe/a27fae02a337a8391533155bad0f535c
+
+class PreSum:  # 标准前缀和模板
+    def __init__(self, data):
+        self.s = list(accumulate(data))
+        self.data = data
+
+    def query(self, i, j):  # 查询的是双闭区间[i, j]的区间和
+        assert 0 <= i <= j < len(self.data)
+        return self.s[j] - self.s[i] + self.data[i]
 ```
 
 # Python2
