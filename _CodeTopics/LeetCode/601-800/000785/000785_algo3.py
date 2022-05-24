@@ -1,3 +1,6 @@
+"""
+注意：本实现不标准，不要再参考了。详情请查阅 `000547_impl.py` 开头处的笔记！！！
+"""
 class Solution(object):
     def isBipartite(self, graph):
         """
