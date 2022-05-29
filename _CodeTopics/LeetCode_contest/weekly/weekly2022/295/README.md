@@ -9,9 +9,12 @@
 
 # 其他
 
-这次的第三题据说比第四题还难，我是第三题做了半天没做出来，导致第四题也没看。后来下面看题解，第四题应该算是模版题。
+这次的第三题据说比第四题还难，我是第三题做了半天没做出来，导致第四题也没看。后来下面看题解，第四题应该算是模版题 or 经典题目？
 - https://leetcode.cn/circle/discuss/E0MOm0/view/H6Uk7Z/
 - https://leetcode.cn/circle/discuss/E0MOm0/view/YyNtoI/
+
+此外，感觉第四题和这个题也比较像：
+- `1368. 使网格图至少有一条有效路径的最小代价` https://leetcode.cn/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/
 
 # (3)
 
