@@ -1,0 +1,15 @@
+
+`33. 搜索旋转排序数组` https://leetcode.cn/problems/search-in-rotated-sorted-array/solution/sou-suo-xuan-zhuan-pai-xu-shu-zu-by-leetcode-solut/
+- [x] 方法一：二分查找
+
+```
+[4,5,6,7,0,1,2]
+0
+[4,5,6,7,0,1,2]
+3
+[1]
+0
+
+[1,3,5]
+1
+```
