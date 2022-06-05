@@ -10,6 +10,16 @@
 
 通过 partition 减治 + 优先队列（Java、C++、Python） https://leetcode-cn.com/problems/kth-largest-element-in-an-array/solution/partitionfen-er-zhi-zhi-you-xian-dui-lie-java-dai-/
 
+```
+[3,2,1,5,6,4]
+2
+[3,2,3,1,2,4,5,5,6]
+4
+
+[1]
+1
+```
+
 # 其他
 
 [LeetCode] TopK问题总结及215、347 #3 https://github.com/yankuangshi/leetcode/issues/3
