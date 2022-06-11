@@ -85,6 +85,14 @@ class PreSum:  # 标准前缀和模板
     def query(self, i, j):  # 查询的是双闭区间[i, j]的区间和
         assert 0 <= i <= j < len(self.data)
         return self.s[j] - self.s[i] + self.data[i]
+
+
+# https://stackoverflow.com/questions/32925418/incremental-sum-a-list-of-numbers-in-python-2-7/32925755#32925755
+# 上面的帖子里也提到了类似下面的一行写法，但是我怀疑可能python不会自己“缓存”，所以复杂度可能是 O(n^2) 的，一般还是别用吧。。。
+>>> nums = [1,2,3,4,5]
+>>> prefixSum = [sum(nums[:i]) for i in range(1, len(nums)+1)]
+>>> prefixSum
+[1, 3, 6, 10, 15]
 ```
 
 # Python2
