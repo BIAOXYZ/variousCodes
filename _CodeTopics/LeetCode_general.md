@@ -151,6 +151,9 @@
 
 广度优先搜索 https://leetcode-cn.com/tag/breadth-first-search/
 - `LC102` 二叉树的层序遍历 【[:watch:][`*`]】
+- **`0-1 BFS`**：
+  * `1368. 使网格图至少有一条有效路径的最小代价` https://leetcode.cn/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/
+  * 【第 295 场周赛】`2290. 到达角落需要移除障碍物的最小数目` https://leetcode.cn/contest/weekly-contest-295/problems/minimum-obstacle-removal-to-reach-corner/
 
 深度优先搜索 https://leetcode-cn.com/tag/depth-first-search/
 - `144. 二叉树的前序遍历` 【[:bulb:][`*`]】
