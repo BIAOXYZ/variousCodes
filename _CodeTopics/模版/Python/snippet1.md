@@ -14,7 +14,7 @@ class PreSum:  # 标准前缀和模板
         return self.s[j] - self.s[i] + self.data[i]
 ```
 - > `差分数组-区间修改.py`
-```
+```py
 class Diff:  # 通用加减类的差分数组模板
     def __init__(self, arr):
         self.diff = [arr[0]] * len(arr)
