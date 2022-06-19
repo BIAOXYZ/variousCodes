@@ -5,6 +5,7 @@
 
 【[:star:][`*`]】 最短路径算法：Dijkstra, BFS, SPFA, 0-1 BFS（本题最佳方法） https://leetcode.cn/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/solution/zui-duan-lu-jing-suan-fa-bfs0-1bfsdijkstra-by-luci/
 >> //notes：其实 0-1 BFS 这个还是在第 295 场周赛的讨论区看到的： https://leetcode.cn/circle/discuss/E0MOm0/view/H6Uk7Z/
+>> //notes：此外，也可以基于堆来实现，效率上不如基于双端队列的。也是从 295 场周赛的讨论区看到的： https://leetcode.cn/circle/discuss/E0MOm0/view/YyNtoI/
 
 ```
 [[1,1,1,1],[2,2,2,2],[1,1,1,1],[2,2,2,2]]
