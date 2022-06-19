@@ -202,6 +202,9 @@
 
 极小化极大 https://leetcode-cn.com/tag/minimax/
 
+差分数组
+- `1109. 航班预订统计` https://leetcode.cn/problems/corporate-flight-bookings/  【[:bulb:][`*`]】
+
 ## other tags
 
 设计 https://leetcode-cn.com/tag/design/
