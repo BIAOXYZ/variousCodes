@@ -175,6 +175,12 @@ while None in nums:
 for i in range(len(nums)-1, 0, -1):
     if nums[i] == nums[i-1]:
         nums.pop(i)
+
+## `000030.py3` 字典遍历中删除key
+### Python字典遍历删除特定值 https://blog.csdn.net/zhangyuexiang123/article/details/101581035
+for k in list(diff.keys()):
+    if diff[k] == 0:
+        diff.pop(k)
 ```
 
 ```py
