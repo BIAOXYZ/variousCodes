@@ -1,0 +1,8 @@
+
+# 缺席
+
+详情参见[第 81 场双周赛 README](https://github.com/BIAOXYZ/variousCodes/blob/master/_CodeTopics/LeetCode_contest/biweekly/biweekly2022/81-absent-4-bj/README.md)
+
+# 中国时间：2022-07-03 10:30
+
+~~第 300 场周赛 https://leetcode-cn.com/contest/weekly-contest-300/~~
