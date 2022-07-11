@@ -1,6 +1,6 @@
 
 `676. 实现一个魔法字典` https://leetcode.cn/problems/implement-magic-dictionary/solution/shi-xian-yi-ge-mo-fa-zi-dian-by-leetcode-b35s/
-- [ ] 方法一：枚举每个字典中的字符串并判断
+- [x] 方法一：枚举每个字典中的字符串并判断
 - [ ] 方法二：使用字典树优化枚举
 
 ```
