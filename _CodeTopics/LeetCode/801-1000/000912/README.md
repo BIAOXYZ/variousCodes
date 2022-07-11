@@ -201,3 +201,9 @@ Python 实现的十大经典排序算法 https://leetcode-cn.com/problems/sort-a
 
 算法 3：最常用的排序——快速排序 https://wiki.jikexueyuan.com/project/easy-learn-algorithm/fast-sort.html
 - > ![](https://wiki.jikexueyuan.com/project/easy-learn-algorithm/images/3.1.png)
+
+### 随机化快速排序
+
+算法导论（一）：快速排序与随机化快排 https://blog.csdn.net/haelang/article/details/44496387
+- > 性能分析
+  * > 多次实验结果：
