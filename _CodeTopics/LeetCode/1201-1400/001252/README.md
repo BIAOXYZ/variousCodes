@@ -12,3 +12,7 @@
 2
 [[1,1],[0,0]]
 ```
+
+# 语法点
+
+用malloc动态申请一个二维数组的三种方法 https://blog.csdn.net/fengxinlinux/article/details/51541003
