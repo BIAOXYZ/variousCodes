@@ -23,6 +23,8 @@ lucifer1004的CP笔记 https://github.com/lucifer1004/cp-wiki
 Leetcode Problem Rating Project https://github.com/zerotrac/leetcode_problem_rating
 - https://zerotrac.github.io/leetcode_problem_rating/
 
+一款显示题目对应周赛难度分的浏览器插件| TamperMonkey | Chrome | FireFox https://github.com/zhang-wangz/LeetCodeRating
+
 # 特殊比赛
 
 ## 中国时间：2022-04-10 17:00
