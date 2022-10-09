@@ -7,6 +7,9 @@
 - 6202. 使用机器人打印字典序最小的字符串 https://leetcode.cn/contest/weekly-contest-314/problems/using-a-robot-to-print-the-lexicographically-smallest-string/
 - 6203. 矩阵中和能被 K 整除的路径 https://leetcode.cn/contest/weekly-contest-314/problems/paths-in-matrix-whose-sum-is-divisible-by-k/
 
+🏆 第 314 场力扣周赛 https://leetcode.cn/circle/discuss/YNdXJT/
+- > 第三题是codeforces上原题。 https://codeforces.com/contest/797/problem/C
+
 # 其他
 
 这个国庆七天假是这样的：上周六周日+本周一--周五。然后本周六周日（`2022.10.08`、`2022.10.09`）调休成工作日，等于连上七天班。。。
