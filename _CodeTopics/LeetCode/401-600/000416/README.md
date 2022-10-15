@@ -24,6 +24,8 @@
 
 # 其他参考链接
 
+最全 LeetCode 背包问题目录（持续更新） https://www.jianshu.com/p/bf08431d6560
+
 背包九讲——全篇详细理解与代码实现 https://blog.csdn.net/yandaoqiusheng/article/details/84782655
 
 背包九讲----整理+例题 https://blog.csdn.net/weixin_43693379/article/details/89432283
