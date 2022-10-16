@@ -20,3 +20,8 @@
 
 0
 ```
+
+# (4)
+>> //notes：这个题算是双指针里的 `Hard` 了。
+
+分析性质 + 一次遍历 https://leetcode.cn/problems/count-subarrays-with-fixed-bounds/solution/fen-xi-ding-jie-zi-shu-zu-de-xing-zhi-yi-qusi/
