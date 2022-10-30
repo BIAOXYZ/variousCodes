@@ -86,6 +86,13 @@ class PreSum:  # 标准前缀和模板
         assert 0 <= i <= j < len(self.data)
         return self.s[j] - self.s[i] + self.data[i]
 
+# 如果用 accumulate() 计算前缀和，参数 initial 带不带其实挺关键的（不只是影响前缀和数组每个元素的值，更主要是元素个数）
+from itertools import accumulate
+nums = [1,2,3]
+prefixSum1 = list(accumulate(nums))
+print("prefixSum1:", prefixSum1)   # prefixSum1: [1, 3, 6]
+prefixSum2 = list(accumulate(nums, initial=0))
+print("prefixSum2:", prefixSum2)   # prefixSum2: [0, 1, 3, 6]
 
 # https://stackoverflow.com/questions/32925418/incremental-sum-a-list-of-numbers-in-python-2-7/32925755#32925755
 # 上面的帖子里也提到了类似下面的一行写法，但是我怀疑可能python不会自己“缓存”，所以复杂度可能是 O(n^2) 的，一般还是别用吧。。。
