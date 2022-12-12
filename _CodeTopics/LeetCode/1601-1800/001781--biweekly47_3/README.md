@@ -1,0 +1,10 @@
+
+`1781. 所有子字符串美丽值之和` https://leetcode.cn/problems/sum-of-beauty-of-all-substrings/solution/suo-you-zi-zi-fu-chuan-mei-li-zhi-zhi-he-rq3x/
+- [ ] 方法一：双层循环
+
+```
+"aabcb"
+"aabcbaa"
+
+"knlzzhnfltqakxnlixytpvaqlqevyrprgxiorsvkapjmlcrwcekputnzaxxffeqqqzvtdcldoeyqbehsfztsopjqzujzekbinwfkoeajszactvxutjqeldcccmxlgdunkimvlxiykgsxtchhtshrmacrpiqiqfftchsznupfxzcaedpcxnbysyacwzlumpbvzptqtrzojiqscjfggylwoxchjxjcylukbjikyidfiqxqtsaqpfabuenbmdmrcirfmzcnhjpfetjitpomjwixgcqcjjquqfpkhmggpsnlacnubytpytjvjovurlciewbumgnjaemivtehdmoshrhjeeogowcuetxhkivtawhlttajodbwdvhcctbeikcokxouvvgtiayzitevaazkovujcssbesgyihbitzxsauuyssaduengrkhdhwoshdcdvxdrkewnyismpvrxqfo"
+```
