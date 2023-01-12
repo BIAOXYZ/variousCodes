@@ -18,8 +18,22 @@ C语言常用宏的使用小结 https://juejin.im/post/6844903950429192200
 
 # C++
 
-```
-
+```cpp
+// LC2283, LC2287
+class Counter {
+public:
+    unordered_map<char, int> _ctr;
+    Counter(string s) {
+        for (char ch : s) {
+            if (_ctr.find(ch) != _ctr.end()) {
+                _ctr[ch]++;
+            } else {
+                _ctr[ch] = 1;
+            }
+        }
+    }
+    ~Counter() = default;
+};
 ```
 
 # Python3
