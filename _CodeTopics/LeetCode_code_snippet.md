@@ -66,6 +66,9 @@ def get_start_pos_and_len(s, ch):
 alphabeta = [chr(i) for i in range(ord('a'), ord('z')+1)]
 print(alphabeta)
 # ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+# 后来发现可以用 python 官方库里的各种常量来代替，比如 string.ascii_letters，string.ascii_lowercase，string.ascii_uppercase，string.digits 等
+https://docs.python.org/zh-cn/3/library/string.html
 ```
 
 ```py
