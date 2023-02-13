@@ -1,0 +1,9 @@
+
+```
+"QWER"
+"QQWE"
+"QQQW"
+"QQQQ"
+
+"WWEQERQWQWWRWWERQWEQ"
+```
