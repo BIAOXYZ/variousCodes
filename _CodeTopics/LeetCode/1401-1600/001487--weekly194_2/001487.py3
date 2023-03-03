@@ -1,34 +1,26 @@
-class Solution(object):
-    def getFolderNames(self, names):
-        """
-        :type names: List[str]
-        :rtype: List[str]
-        """
-        
-        length = len(names)
-        dic = dict()
+class Solution:
+    def getFolderNames(self, names: List[str]) -> List[str]:
+
+        n = len(names)
+        nextIndexDic = {}
         res = []
-        for i in range(length):
-            if not dic.has_key(names[i]):
-                dic[names[i]] = 1
-                res.append(names[i])
-                ## print "names[i] is: ",names[i]
+        for name in names:
+            if name not in nextIndexDic:
+                nextIndexDic[name] = 1
+                res.append(name)
             else:
-                pos = len(names[i])
-                # 这里直接从字典里记录的当前最大开始
-                j = dic[names[i]]
-                tempname = names[i] + '(' + str(j) + ')'
-                while dic.has_key(tempname):
-                    j += 1
-                    suffix = '(' + str(j) + ')'
-                    tempname = tempname[:pos] + suffix
-                # 更新这个key对应的当前最大
-                dic[names[i]] = j + 1
-                dic[tempname] = 1
-                res.append(tempname)
-                ## print "tempname is: ",tempname
+                pos = len(name)
+                nextInd = nextIndexDic[name]
+                tmpName = name + '(' + str(nextInd) + ')'
+                while tmpName in nextIndexDic:
+                    nextInd += 1
+                    suffix = '(' + str(nextInd) + ')'
+                    tmpName = tmpName[:pos] + suffix
+                nextIndexDic[name] = nextInd + 1
+                nextIndexDic[tmpName] = 1
+                res.append(tmpName)
         return res
-    
+        
 """
 https://leetcode.cn/submissions/detail/80893117/
 
