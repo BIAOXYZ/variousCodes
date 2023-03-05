@@ -15,7 +15,7 @@
 
 ## 非官方
 
-lucifer1004的CP笔记 https://github.com/lucifer1004/cp-wiki
+lucifer1004的CP笔记 https://github.com/lucifer1004/cp-wiki  【`吴自华` https://leetcode.cn/u/lucifer1004/ 】
 - 关于Leetcode https://cp-wiki.vercel.app/tutorial/leetcode/
 
 历次周赛题目场次及对应具体题目题号+链接汇总 https://leetcode-cn.com/circle/article/I9DWmo/
@@ -24,6 +24,8 @@ Leetcode Problem Rating Project https://github.com/zerotrac/leetcode_problem_rat
 - https://zerotrac.github.io/leetcode_problem_rating/
 
 一款显示题目对应周赛难度分的浏览器插件| TamperMonkey | Chrome | FireFox https://github.com/zhang-wangz/LeetCodeRating
+
+每日一题·高质量题解精选 https://github.com/EndlessCheng/codeforces-go/blob/master/leetcode/SOLUTIONS.md  【`灵茶山艾府` https://leetcode.cn/u/endlesscheng/ 】
 
 # 特殊比赛
 
