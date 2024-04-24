@@ -18,10 +18,13 @@
 
 《葬送的芙莉莲》相关链接：
 - 葬送的芙莉莲 https://zh.moegirl.org.cn/%E8%91%AC%E9%80%81%E7%9A%84%E8%8A%99%E8%8E%89%E8%8E%B2
-- 葬送的芙莉莲 葬送のフリーレン (2023) https://movie.douban.com/subject/36093351/
 - 萌娘百科的两个新镜像站（似乎一个是萌百官方的，一个是第三方的）
   * 葬送的芙莉莲 https://moegirl.icu/%E8%91%AC%E9%80%81%E7%9A%84%E8%8A%99%E8%8E%89%E8%8E%B2
   * 葬送的芙莉莲 https://moegirl.uk/%E8%91%AC%E9%80%81%E7%9A%84%E8%8A%99%E8%8E%89%E8%8E%B2
+- 葬送的芙莉莲 葬送のフリーレン (2023) https://movie.douban.com/subject/36093351/
+  * 持续更新～[记一些有趣小细节]比如主角团名字的对应含义+ED花田魔法（更新官方解释！） https://movie.douban.com/review/15495255/
+  * 随便扯两句 https://movie.douban.com/review/15691548/
+  * 《葬送的芙莉莲·第一季》台词摘录 https://movie.douban.com/review/15839742/
 
 # 中国时间：2024-04-21 10:30
 
