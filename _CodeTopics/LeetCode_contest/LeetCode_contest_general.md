@@ -23,7 +23,13 @@ lucifer1004的CP笔记 https://github.com/lucifer1004/cp-wiki  【`吴自华` ht
 Leetcode Problem Rating Project https://github.com/zerotrac/leetcode_problem_rating
 - https://zerotrac.github.io/leetcode_problem_rating/
 
-一款显示题目对应周赛难度分的浏览器插件| TamperMonkey | Chrome | FireFox https://github.com/zhang-wangz/LeetCodeRating
+一款显示题目对应周赛难度分的浏览器插件| TamperMonkey | Chrome | FireFox https://github.com/zhang-wangz/LeetCodeRating || LeetCodeRating｜显示力扣周赛难度分 https://greasyfork.org/zh-CN/scripts/450890-leetcoderating-%E6%98%BE%E7%A4%BA%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E9%9A%BE%E5%BA%A6%E5%88%86
+- > 🐒 插件说明
+  * > 有周赛分数据的地方才会显示分数，没有则显示原有的难度
+  * > 界面没有改变的话只是因为对应的数据没有收录导致的
+  * > 当前所有的数据都出自项目: https://zerotrac.github.io/leetcode_problem_rating/
+  * > 项目设计初衷来自灵佬的视频: https://www.bilibili.com/video/BV1rS4y1s721/ | 训练技巧，上分技巧 部分
+- > 💡 脚本功能菜单 (求star ヾ(≧▽≦*)o)
 
 每日一题·高质量题解精选 https://github.com/EndlessCheng/codeforces-go/blob/master/leetcode/SOLUTIONS.md  【`灵茶山艾府` https://leetcode.cn/u/endlesscheng/ 】
 
