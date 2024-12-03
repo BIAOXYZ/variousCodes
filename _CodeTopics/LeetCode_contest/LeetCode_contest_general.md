@@ -1,4 +1,9 @@
 
+# 2024
+
+`weekly 408_4` `3235. 判断矩形的两个角落是否可达` https://leetcode.cn/problems/check-if-the-rectangle-corner-is-reachable/description/
+>> //notes：目前 LeetCode 难度分数最高题目（`3774分`），当期周赛中国区只有一个做出来的（ https://leetcode.cn/contest/weekly-contest-408/ranking/ ），全球只有三个做出来的。。。可以看下该目下面的评论就可以知道更多细节了。
+
 # 2021
 
 `weekly 231_3` 最短路径 Dijkstra 算法。
