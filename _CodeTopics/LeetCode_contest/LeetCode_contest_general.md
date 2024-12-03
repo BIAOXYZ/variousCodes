@@ -2,7 +2,21 @@
 # 2024
 
 `weekly 408_4` `3235. 判断矩形的两个角落是否可达` https://leetcode.cn/problems/check-if-the-rectangle-corner-is-reachable/description/
->> //notes：目前 LeetCode 难度分数最高题目（`3774分`），当期周赛中国区只有一个做出来的（ https://leetcode.cn/contest/weekly-contest-408/ranking/ ），全球只有三个做出来的。。。可以看下该目下面的评论就可以知道更多细节了。
+>> //notes：目前 LeetCode 难度分数最高题目（`3774分`），当期周赛中国区只有一个做出来的（ https://leetcode.cn/contest/weekly-contest-408/ranking/ ），全球只有三个做出来的。。。可以看下该目下面的评论就可以知道更多细节了。比如有人在该题目（和`3245. 交替组 III`）的评论区里总结了当前的高难度题目：
+- https://leetcode.cn/problems/check-if-the-rectangle-corner-is-reachable/description/comments/2384558
+```console
+猜你想找
+3235. 判断矩形的两个角落是否可达 3774 分
+3245. 交替组 III 3112 分
+3049. 标记所有下标的最早秒数 II 3111 分
+3003. 执行操作后的最大分割数量 3039 分
+3225. 网格图操作后的最大分数 3028 分
+1719. 重构一棵树的方案数 3018 分
+2809. 使数组和小于等于 x 的最少时间 2979 分
+2945. 找到最大非递减数组的长度 2943 分
+3022. 给定操作次数内使剩余元素的或值最小 2918 分
+2699. 修改图中的边权 2874 分
+```
 
 # 2021
 
